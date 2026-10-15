@@ -19,3 +19,5 @@ Limitaciones importantes:
 - Los promedios son descriptivos y no constituyen diagnóstico médico.
 \nActualización: incluye módulo de reportes semanales (últimos 7 días) y mensuales (mes calendario), resumen de presión y glucosa, detalle por medición, exportación CSV e impresión/Guardar PDF desde el navegador. Los reportes son descriptivos y no diagnósticos.\n
 Identidad visual actualizada: SaludPlus, logo de gota y hojas en azul, turquesa y verde. Eslogan: Control hoy, bienestar mañana.
+
+IMPORTANTE PARA SUBIR DESDE IPHONE: todos los archivos de esta versión están en la raíz del repositorio. Los iconos y el logo se referencian desde la raíz para que funcionen con GitHub Upload Files en iOS.
