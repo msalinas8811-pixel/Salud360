@@ -1,12 +1,12 @@
 {
-  "name": "Salud 360",
-  "short_name": "Salud 360",
-  "description": "Seguimiento personal de presión arterial, glucosa, medicamentos y consultas.",
+  "name": "SaludPlus",
+  "short_name": "SaludPlus",
+  "description": "Control hoy, bienestar mañana. Seguimiento de presión arterial, glucosa, medicamentos y consultas.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f3f8f8",
-  "theme_color": "#0f766e",
+  "background_color": "#f3f8fc",
+  "theme_color": "#0879c9",
   "icons": [
     {
       "src": "icons/icon-192.png",

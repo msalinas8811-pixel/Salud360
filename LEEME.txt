@@ -17,3 +17,5 @@ Limitaciones importantes:
 - Adjuntos de receta se guardan localmente en el navegador y se incluyen en el backup.
 - No usar datos médicos reales sensibles hasta implementar seguridad, cifrado y un mecanismo de almacenamiento fiable.
 - Los promedios son descriptivos y no constituyen diagnóstico médico.
+\nActualización: incluye módulo de reportes semanales (últimos 7 días) y mensuales (mes calendario), resumen de presión y glucosa, detalle por medición, exportación CSV e impresión/Guardar PDF desde el navegador. Los reportes son descriptivos y no diagnósticos.\n
+Identidad visual actualizada: SaludPlus, logo de gota y hojas en azul, turquesa y verde. Eslogan: Control hoy, bienestar mañana.
