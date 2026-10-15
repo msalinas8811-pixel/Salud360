@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f766e">
+<meta name="description" content="Salud 360: seguimiento personal de presión arterial, glucosa, medicamentos y consultas.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<title>Salud 360</title>
+<style>
+:root{--teal:#0f766e;--teal2:#14b8a6;--ink:#16313b;--muted:#61747b;--bg:#f3f8f8;--card:#fff;--line:#dce8e8;--red:#b42318;--amber:#a15c00}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:1050px;margin:auto;min-height:100vh}.top{background:linear-gradient(120deg,#115e59,#0f766e,#14b8a6);color:white;padding:22px 18px 18px;border-radius:0 0 24px 24px}.topline{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:800;font-size:25px;letter-spacing:-.5px}.sub{opacity:.9;font-size:13px;margin-top:4px}.pill{border:1px solid #ffffff66;border-radius:99px;padding:7px 10px;font-size:12px;white-space:nowrap}.nav{display:flex;gap:7px;overflow:auto;padding:12px 12px 4px;position:sticky;top:0;background:var(--bg);z-index:3}.nav button{border:1px solid var(--line);background:white;color:var(--muted);border-radius:12px;padding:10px 12px;white-space:nowrap;font-size:13px}.nav button.active{background:var(--teal);color:white;border-color:var(--teal)}main{padding:14px 14px 40px}.view{display:none}.view.active{display:block}.section-head{display:flex;align-items:start;justify-content:space-between;gap:12px;margin:4px 0 14px}.section-head h2{margin:0;font-size:22px}.muted{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:15px;box-shadow:0 2px 8px #183b4308;min-width:0}.metric{font-size:27px;font-weight:800;letter-spacing:-.8px;margin:7px 0}.metric small{font-size:13px;font-weight:600;letter-spacing:0}.card h3{margin:0 0 10px;font-size:15px}.row{display:flex;align-items:center;gap:10px}.row.between{justify-content:space-between}.iconbox{width:39px;height:39px;border-radius:13px;display:grid;place-items:center;background:#dff7f3;font-size:20px;flex-shrink:0}.btn{border:0;border-radius:12px;background:var(--teal);color:white;padding:11px 14px;font-weight:700}.btn.secondary{background:#e4f4f2;color:#0f625c}.btn.ghost{background:white;color:var(--teal);border:1px solid var(--line)}.btn.danger{background:#fff0ee;color:var(--red)}.btn.small{padding:7px 10px;font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#48616a}.field input,.field select,.field textarea{width:100%;padding:11px;border:1px solid #cbdcde;border-radius:10px;background:white;color:var(--ink);min-width:0}.field textarea{min-height:78px;resize:vertical}.formcard{margin-bottom:14px}.formcard h3{margin-bottom:14px}.form-actions{display:flex;gap:8px;margin-top:13px;flex-wrap:wrap}.list{display:grid;gap:9px}.item{background:white;border:1px solid var(--line);border-radius:13px;padding:12px;display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.item strong{display:block;font-size:14px}.item p{margin:4px 0 0;color:var(--muted);font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere}.tag{display:inline-block;font-size:11px;border-radius:99px;padding:4px 8px;background:#e4f4f2;color:#0f625c;margin-top:5px}.empty{border:1px dashed #bfd2d4;border-radius:14px;padding:20px;text-align:center;color:var(--muted);font-size:13px}.notice{padding:12px 13px;background:#fff8e8;border:1px solid #f2dfb5;border-radius:12px;color:#79520b;font-size:12px;line-height:1.5;margin:12px 0}.goodnote{padding:12px;background:#e8f7f2;border-radius:12px;color:#155e54;font-size:12px;line-height:1.5}.hidden{display:none!important}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:12px}td,th{text-align:left;padding:9px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--muted)}.smallmuted{font-size:11px;color:var(--muted)}.footer{text-align:center;padding:0 18px 26px;color:var(--muted);font-size:11px}
+@media(min-width:760px){.top{margin-top:16px;border-radius:24px;padding:26px}.nav{border-radius:15px;margin-top:10px}.grid{grid-template-columns:repeat(4,minmax(0,1fr))}main{padding:18px 0 40px}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}}
+@media(max-width:420px){.grid{grid-template-columns:1fr 1fr}.metric{font-size:23px}.formgrid{grid-template-columns:1fr 1fr}.brand{font-size:23px}.card{padding:12px}.top{padding:18px 15px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="top">
+ <div class="topline"><div><div class="brand">✚ Salud 360</div><div class="sub">Tu información de salud, organizada en un solo lugar</div></div><span class="pill" id="storageStatus">Guardado en este dispositivo</span></div>
+</header>
+<nav class="nav" aria-label="Módulos">
+ <button class="active" data-view="inicio">Inicio</button><button data-view="presion">Presión</button><button data-view="glucosa">Glucosa</button><button data-view="medicamentos">Medicamentos</button><button data-view="consultas">Consultas y recetas</button><button data-view="respaldo">Backup</button>
+</nav>
+<main>
+<section id="inicio" class="view active">
+ <div class="section-head"><div><h2>Resumen</h2><div class="muted" id="todayLabel"></div></div><button class="btn small" onclick="showView('presion')">＋ Registrar</button></div>
+ <div class="grid">
+  <div class="card"><div class="row"><div class="iconbox">♥</div><div class="muted">Última presión</div></div><div class="metric" id="homeBP">—</div><div class="muted" id="homeBPSub">Sin registros</div></div>
+  <div class="card"><div class="row"><div class="iconbox">◉</div><div class="muted">Última glucosa</div></div><div class="metric" id="homeGlucose">—</div><div class="muted" id="homeGlucoseSub">Sin registros</div></div>
+  <div class="card"><div class="row"><div class="iconbox">◷</div><div class="muted">Medicamentos</div></div><div class="metric" id="homeMeds">0</div><div class="muted">Configurados</div></div>
+  <div class="card"><div class="row"><div class="iconbox">＋</div><div class="muted">Consultas</div></div><div class="metric" id="homeVisits">0</div><div class="muted">Registradas</div></div>
+ </div>
+ <div class="two" style="margin-top:14px"><div class="card"><h3>Promedio de presión (últimas 7 jornadas registradas)</h3><div class="metric" id="avgBP">—</div><div class="muted" id="avgBPSub">Se calcula con las mediciones guardadas.</div></div><div class="card"><h3>Próximas citas</h3><div id="upcomingVisits" class="list"><div class="empty">No hay citas registradas.</div></div></div></div>
+ <div class="notice">Salud 360 ayuda a organizar mediciones y documentos; no diagnostica ni sustituye a un profesional sanitario. Si tienes síntomas preocupantes, busca atención médica.</div>
+</section>
+<section id="presion" class="view">
+ <div class="section-head"><div><h2>Presión arterial</h2><div class="muted">Registra cada toma y compara ambos brazos.</div></div></div>
+ <div class="card formcard"><h3>Nueva medición</h3><form id="bpForm"><div class="formgrid">
+  <div class="field"><label>Fecha</label><input name="date" type="date" required></div><div class="field"><label>Hora</label><input name="time" type="time" required></div>
+  <div class="field"><label>N.º de toma</label><select name="take"><option>1</option><option>2</option><option>3</option></select></div><div class="field"><label>Condición / notas</label><input name="notes" placeholder="Ej. reposo, mañana"></div>
+  <div class="field"><label>Izquierdo: sistólica</label><input name="ls" type="number" min="50" max="300" placeholder="mmHg" required></div><div class="field"><label>Izquierdo: diastólica</label><input name="ld" type="number" min="30" max="200" placeholder="mmHg" required></div>
+  <div class="field"><label>Izquierdo: pulso</label><input name="lp" type="number" min="20" max="250" placeholder="lpm"></div><div class="field"><label>Derecho: sistólica</label><input name="rs" type="number" min="50" max="300" placeholder="mmHg" required></div>
+  <div class="field"><label>Derecho: diastólica</label><input name="rd" type="number" min="30" max="200" placeholder="mmHg" required></div><div class="field"><label>Derecho: pulso</label><input name="rp" type="number" min="20" max="250" placeholder="lpm"></div>
+ </div><div class="form-actions"><button class="btn" type="submit">Guardar medición</button><button class="btn ghost" type="reset">Limpiar</button></div></form></div>
+ <div class="grid" style="margin-bottom:14px"><div class="card"><div class="muted">Promedio sistólica (ambos brazos)</div><div class="metric" id="bpSysAvg">—</div></div><div class="card"><div class="muted">Promedio diastólica (ambos brazos)</div><div class="metric" id="bpDiaAvg">—</div></div><div class="card"><div class="muted">PAM promedio aproximada</div><div class="metric" id="bpPamAvg">—</div></div><div class="card"><div class="muted">Diferencia sistólica entre brazos</div><div class="metric" id="bpDiff">—</div></div></div>
+ <div class="card"><div class="row between" style="margin-bottom:10px"><h3 style="margin:0">Historial</h3><span class="muted" id="bpCount">0 registros</span></div><div id="bpList" class="list"><div class="empty">Aún no hay mediciones.</div></div></div>
+ <div class="notice">La PAM se estima como (sistólica + 2 × diastólica) / 3. Las diferencias entre brazos y los promedios son datos descriptivos, no un diagnóstico. Para seguimiento habitual, mide en condiciones consistentes y sigue las indicaciones de tu profesional.</div>
+</section>
+<section id="glucosa" class="view">
+ <div class="section-head"><div><h2>Control de glucosa</h2><div class="muted">Anota el resultado y las circunstancias de la medición.</div></div></div>
+ <div class="card formcard"><h3>Nueva medición</h3><form id="glucoseForm"><div class="formgrid">
+ <div class="field"><label>Fecha</label><input name="date" type="date" required></div><div class="field"><label>Hora</label><input name="time" type="time" required></div><div class="field"><label>Glucosa (mg/dL)</label><input name="value" type="number" min="20" max="800" required></div><div class="field"><label>Momento</label><select name="when"><option>Ayunas</option><option>Antes de comer</option><option>2 horas después de comer</option><option>Antes de dormir</option><option>Otro</option></select></div><div class="field full"><label>Notas</label><textarea name="notes" placeholder="Comida, síntomas o indicaciones relevantes"></textarea></div></div><div class="form-actions"><button class="btn" type="submit">Guardar glucosa</button></div></form></div>
+ <div class="card"><div class="row between"><h3>Historial</h3><div class="muted" id="glucoseAvg">Promedio: —</div></div><div id="glucoseList" class="list"><div class="empty">Aún no hay mediciones.</div></div></div>
+ <div class="notice">Los objetivos de glucosa dependen de cada persona, del momento de la medición y de su plan clínico. La aplicación no asigna un diagnóstico automático.</div>
+</section>
+<section id="medicamentos" class="view">
+ <div class="section-head"><div><h2>Medicamentos</h2><div class="muted">Añade solo lo indicado por el profesional sanitario.</div></div></div>
+ <div class="card formcard"><h3>Agregar medicamento</h3><form id="medForm"><div class="formgrid">
+ <div class="field"><label>Nombre</label><input name="name" required placeholder="Nombre del medicamento"></div><div class="field"><label>Dosis prescrita</label><input name="dose" required placeholder="Como aparece en la receta"></div><div class="field"><label>Hora de recordatorio</label><input name="time" type="time" required></div><div class="field"><label>Fecha de inicio</label><input name="start" type="date" required></div><div class="field"><label>Fecha de fin (si aplica)</label><input name="end" type="date"></div><div class="field"><label>Vincular receta</label><select name="prescription" id="medPrescription"><option value="">Sin receta vinculada</option></select></div><div class="field full"><label>Instrucciones de la receta</label><textarea name="instructions" placeholder="Frecuencia/duración prescritas; no cambies la indicación por cuenta propia"></textarea></div></div><div class="form-actions"><button class="btn" type="submit">Guardar medicamento</button></div></form></div>
+ <div class="notice">En esta versión inicial, los horarios se guardan como recordatorios, pero la página web no garantiza alarmas si el navegador está cerrado o el sistema suspende la app. No sustituye un sistema de alarmas nativo.</div>
+ <div id="medList" class="list"><div class="empty">No hay medicamentos registrados.</div></div>
+</section>
+<section id="consultas" class="view">
+ <div class="section-head"><div><h2>Consultas y recetas</h2><div class="muted">Guarda citas, indicaciones y archivos asociados.</div></div></div>
+ <div class="card formcard"><h3>Registrar consulta</h3><form id="visitForm"><div class="formgrid">
+ <div class="field"><label>Fecha de consulta</label><input name="date" type="date" required></div><div class="field"><label>Próxima cita (si aplica)</label><input name="nextDate" type="date"></div><div class="field"><label>Médico</label><input name="doctor" placeholder="Nombre del médico"></div><div class="field"><label>Especialidad</label><input name="specialty" placeholder="Ej. cardiología"></div><div class="field full"><label>Motivo / notas</label><textarea name="notes" placeholder="Motivo, indicaciones y seguimiento"></textarea></div><div class="field full"><label>Adjuntar receta o documento (imagen/PDF)</label><input name="file" type="file" accept="image/*,.pdf,application/pdf"></div></div><div class="form-actions"><button class="btn" type="submit">Guardar consulta</button></div></form></div>
+ <div id="visitList" class="list"><div class="empty">No hay consultas registradas.</div></div>
+</section>
+<section id="respaldo" class="view">
+ <div class="section-head"><div><h2>Backup y restauración</h2><div class="muted">Exporta los datos para transferirlos a otro dispositivo.</div></div></div>
+ <div class="grid">
+ <div class="card"><div class="iconbox">↗</div><h3 style="margin-top:10px">Crear backup</h3><p class="muted">Descarga un archivo JSON con registros y archivos adjuntos guardados en esta versión.</p><button class="btn" id="exportBtn">Exportar backup</button></div>
+ <div class="card"><div class="iconbox">↙</div><h3 style="margin-top:10px">Restaurar backup</h3><p class="muted">Importa un backup creado por Salud 360. La restauración reemplaza los datos actuales.</p><input id="importFile" type="file" accept=".json,application/json"><div style="height:9px"></div><button class="btn secondary" id="importBtn">Restaurar archivo</button></div>
+ </div>
+ <div class="notice">El backup contiene información médica privada. Guárdalo en un lugar seguro y compártelo solo con personas de confianza. Esta versión almacena datos localmente en el navegador; si borras sus datos o cambias de navegador, puedes perderlos si no tienes un backup.</div>
+ <div class="card"><h3>Datos de esta instalación</h3><div id="backupStats" class="muted">Calculando…</div><div class="form-actions"><button class="btn danger" id="clearBtn">Borrar todos los datos</button></div></div>
+</section>
+</main>
+<div class="footer">Salud 360 · Prototipo web inicial · No es un dispositivo médico ni sustituye la atención profesional.</div>
+</div>
+<script>
+const KEY='salud360_pwa_v1';
+const emptyData=()=>({bp:[],glucose:[],meds:[],visits:[]});
+let data=loadData();
+function loadData(){try{return {...emptyData(),...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){return emptyData()}}
+function save(){localStorage.setItem(KEY,JSON.stringify(data));render();document.getElementById('storageStatus').textContent='Guardado en este dispositivo'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function today(){return new Date().toLocaleDateString('en-CA')}
+function nowTime(){return new Date().toTimeString().slice(0,5)}
+function setDefaults(){document.querySelectorAll('input[type=date]').forEach(x=>{if(!x.value)x.value=today()});document.querySelectorAll('input[type=time]').forEach(x=>{if(!x.value)x.value=nowTime()})}
+function showView(id){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));if(id==='medicamentos')refreshPrescriptionOptions();window.scrollTo({top:0,behavior:'smooth'})}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+function fmtDate(d){if(!d)return 'Sin fecha';let [y,m,day]=d.split('-');return `${day}/${m}/${y}`}
+function average(a){return a.length?a.reduce((s,v)=>s+Number(v),0)/a.length:null}
+function empty(text){return `<div class="empty">${text}</div>`}
+function listItem(title,sub,buttons=''){return `<div class="item"><div style="min-width:0;flex:1"><strong>${title}</strong><p>${sub}</p></div><div class="actions">${buttons}</div></div>`}
+function removeBtn(type,id){return `<button class="btn danger small" onclick="removeItem('${type}','${id}')">Eliminar</button>`}
+function removeItem(type,id){if(!confirm('¿Eliminar este registro?'))return;data[type]=data[type].filter(x=>x.id!==id);save()}
+function render(){
+ const bp=[...data.bp].sort((a,b)=>(b.date+b.time).localeCompare(a.date+a.time));
+ const gl=[...data.glucose].sort((a,b)=>(b.date+b.time).localeCompare(a.date+a.time));
+ const visits=[...data.visits].sort((a,b)=>(a.nextDate||'9999').localeCompare(b.nextDate||'9999'));
+ document.getElementById('todayLabel').textContent=new Date().toLocaleDateString('es-SV',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+ document.getElementById('homeBP').textContent=bp.length?`${bp[0].ls}/${bp[0].ld}`:'—';
+ document.getElementById('homeBPSub').textContent=bp.length?`Izq. · ${fmtDate(bp[0].date)} · Der. ${bp[0].rs}/${bp[0].rd}`:'Sin registros';
+ document.getElementById('homeGlucose').textContent=gl.length?`${gl[0].value} <small>mg/dL</small>`:'—';
+ document.getElementById('homeGlucoseSub').textContent=gl.length?`${fmtDate(gl[0].date)} · ${gl[0].when}`:'Sin registros';
+ document.getElementById('homeMeds').textContent=data.meds.length;
+ document.getElementById('homeVisits').textContent=data.visits.length;
+ const recent=bp.slice(0,7);const ss=recent.flatMap(x=>[+x.ls,+x.rs]),dd=recent.flatMap(x=>[+x.ld,+x.rd]);
+ document.getElementById('avgBP').textContent=ss.length?`${Math.round(average(ss))}/${Math.round(average(dd))} mmHg`:'—';
+ document.getElementById('avgBPSub').textContent=ss.length?`${recent.length} jornadas/mediciones recientes incluidas; revisa el historial para contexto.`:'Se calcula con las mediciones guardadas.';
+ document.getElementById('bpSysAvg').textContent=ss.length?Math.round(average(ss))+' mmHg':'—';
+ document.getElementById('bpDiaAvg').textContent=dd.length?Math.round(average(dd))+' mmHg':'—';
+ const pams=recent.flatMap(x=>[(+x.ls+2*(+x.ld))/3,(+x.rs+2*(+x.rd))/3]);
+ document.getElementById('bpPamAvg').textContent=pams.length?Math.round(average(pams))+' mmHg':'—';
+ document.getElementById('bpDiff').textContent=recent.length?Math.round(average(recent.map(x=>Math.abs(+x.ls-+x.rs))))+' mmHg':'—';
+ document.getElementById('bpCount').textContent=`${bp.length} registros`;
+ document.getElementById('bpList').innerHTML=bp.length?bp.map(x=>listItem(`${fmtDate(x.date)} · ${esc(x.time)} · Toma ${esc(x.take)}`,`Izquierdo ${x.ls}/${x.ld} · pulso ${x.lp||'—'} | Derecho ${x.rs}/${x.rd} · pulso ${x.rp||'—'}\nPAM aprox.: ${Math.round((+x.ls+2*(+x.ld))/3)} / ${Math.round((+x.rs+2*(+x.rd))/3)} · Dif. sistólica: ${Math.abs(+x.ls-+x.rs)} mmHg${x.notes?'\n'+esc(x.notes):''}`,removeBtn('bp',x.id))).join(''):empty('Aún no hay mediciones.');
+ document.getElementById('glucoseAvg').textContent=gl.length?`Promedio de registros: ${Math.round(average(gl.map(x=>+x.value)))} mg/dL`:'Promedio: —';
+ document.getElementById('glucoseList').innerHTML=gl.length?gl.map(x=>listItem(`${x.value} mg/dL · ${fmtDate(x.date)} ${esc(x.time)}`,`${esc(x.when)}${x.notes?'\n'+esc(x.notes):''}`,removeBtn('glucose',x.id))).join(''):empty('Aún no hay mediciones.');
+ document.getElementById('medList').innerHTML=data.meds.length?data.meds.map(x=>listItem(`${esc(x.name)} · ${esc(x.dose)}`,`Recordatorio: ${esc(x.time)} · Desde ${fmtDate(x.start)}${x.end?' hasta '+fmtDate(x.end):''}${x.instructions?'\n'+esc(x.instructions):''}${x.prescription?'\nReceta vinculada: '+esc(data.visits.find(v=>v.id===x.prescription)?.fileName||'consulta'):''}`,`<button class="btn secondary small" onclick="medTaken('${x.id}')">Marcar tomada hoy</button>${removeBtn('meds',x.id)}`)).join(''):empty('No hay medicamentos registrados.');
+ document.getElementById('visitList').innerHTML=data.visits.length?[...data.visits].sort((a,b)=>b.date.localeCompare(a.date)).map(x=>listItem(`${esc(x.doctor||'Consulta médica')} · ${fmtDate(x.date)}`,`${esc(x.specialty||'Especialidad no indicada')}${x.nextDate?'\nPróxima cita: '+fmtDate(x.nextDate):''}${x.notes?'\n'+esc(x.notes):''}${x.fileName?'\nArchivo: '+esc(x.fileName):''}`,`${x.fileData?`<button class="btn secondary small" onclick="openAttachment('${x.id}')">Ver archivo</button>`:''}${removeBtn('visits',x.id)}`)).join(''):empty('No hay consultas registradas.');
+ document.getElementById('upcomingVisits').innerHTML=visits.filter(v=>v.nextDate&&v.nextDate>=today()).length?visits.filter(v=>v.nextDate&&v.nextDate>=today()).slice(0,3).map(v=>listItem(fmtDate(v.nextDate),esc(v.doctor||'Consulta médica')+' · '+esc(v.specialty||'')).replace('class="item"','class="item"')).join(''):empty('No hay citas futuras registradas.');
+ document.getElementById('backupStats').textContent=`${data.bp.length} mediciones de presión · ${data.glucose.length} registros de glucosa · ${data.meds.length} medicamentos · ${data.visits.length} consultas`;
+ refreshPrescriptionOptions();
+}
+function refreshPrescriptionOptions(){const s=document.getElementById('medPrescription');if(!s)return;const old=s.value;s.innerHTML='<option value="">Sin receta vinculada</option>'+data.visits.map(v=>`<option value="${v.id}">${esc(fmtDate(v.date)+' · '+(v.doctor||'Consulta')+(v.fileName?' · '+v.fileName:''))}</option>`).join('');if([...s.options].some(o=>o.value===old))s.value=old}
+function id(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random().toString(16).slice(2)}
+document.getElementById('bpForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);data.bp.push({id:id(),date:f.get('date'),time:f.get('time'),take:f.get('take'),notes:f.get('notes'),ls:+f.get('ls'),ld:+f.get('ld'),lp:f.get('lp')?+f.get('lp'):null,rs:+f.get('rs'),rd:+f.get('rd'),rp:f.get('rp')?+f.get('rp'):null});e.target.reset();setDefaults();save()});
+document.getElementById('glucoseForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);data.glucose.push({id:id(),date:f.get('date'),time:f.get('time'),value:+f.get('value'),when:f.get('when'),notes:f.get('notes')});e.target.reset();setDefaults();save()});
+document.getElementById('medForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);data.meds.push({id:id(),name:f.get('name'),dose:f.get('dose'),time:f.get('time'),start:f.get('start'),end:f.get('end'),prescription:f.get('prescription'),instructions:f.get('instructions'),taken:[]});e.target.reset();setDefaults();save()});
+document.getElementById('visitForm').addEventListener('submit',async e=>{e.preventDefault();const f=new FormData(e.target),file=f.get('file');let fileData=null,fileName='';if(file&&file.size){if(file.size>8*1024*1024){alert('El archivo supera 8 MB. Elige un archivo más pequeño.');return}fileData=await toDataURL(file);fileName=file.name}data.visits.push({id:id(),date:f.get('date'),nextDate:f.get('nextDate'),doctor:f.get('doctor'),specialty:f.get('specialty'),notes:f.get('notes'),fileData,fileName});e.target.reset();setDefaults();save()});
+function toDataURL(file){return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result);r.onerror=rej;r.readAsDataURL(file)})}
+function openAttachment(visitId){const v=data.visits.find(x=>x.id===visitId);if(!v?.fileData)return;const w=window.open();if(!w){alert('Permite ventanas emergentes para ver el adjunto.');return}if(v.fileName.toLowerCase().endsWith('.pdf'))w.location.href=v.fileData;else w.document.write(`<title>${esc(v.fileName)}</title><img style="max-width:100%;height:auto" src="${v.fileData}">`)}
+function medTaken(mid){const m=data.meds.find(x=>x.id===mid);if(!m)return;m.taken=m.taken||[];m.taken.push({date:today(),time:nowTime()});save();alert('Toma registrada en el historial de este prototipo. Esto no envía una alarma ni verifica que el medicamento se haya tomado.')}
+document.getElementById('exportBtn').addEventListener('click',()=>{const blob=new Blob([JSON.stringify({app:'Salud 360',version:1,exportedAt:new Date().toISOString(),data},null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`salud360-backup-${today()}.json`;a.click();URL.revokeObjectURL(a.href)});
+document.getElementById('importBtn').addEventListener('click',()=>{const file=document.getElementById('importFile').files[0];if(!file){alert('Selecciona un archivo de backup.');return}const r=new FileReader();r.onload=()=>{try{const parsed=JSON.parse(r.result);const incoming=parsed.data;if(!incoming||!Array.isArray(incoming.bp)||!Array.isArray(incoming.glucose)||!Array.isArray(incoming.meds)||!Array.isArray(incoming.visits))throw new Error('Formato inválido');if(!confirm('Esto reemplazará todos los datos actuales. ¿Deseas continuar?'))return;data=incoming;save();alert('Backup restaurado.')}catch(err){alert('No se pudo restaurar: el archivo no parece un backup válido de Salud 360.')}};r.readAsText(file)});
+document.getElementById('clearBtn').addEventListener('click',()=>{if(confirm('¿Seguro que quieres borrar permanentemente todos los datos guardados en este navegador?')){data=emptyData();save()}});
+setDefaults();render();
+if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>

@@ -1,0 +1,19 @@
+SALUD 360 — PROTOTIPO WEB PWA
+
+Archivos:
+- index.html: aplicación web interactiva
+- manifest.json y sw.js: base para instalación PWA y caché sin conexión
+- icons/: iconos
+
+Para probar:
+1. Descomprime el ZIP.
+2. Abre index.html para una vista previa básica. Algunas funciones PWA solo trabajan cuando se publica por HTTPS o localhost.
+3. Para instalar como PWA, publica todos los archivos en un hosting HTTPS (por ejemplo, un servicio de hosting estático).
+4. Los datos se guardan en el almacenamiento local del navegador del dispositivo. No se sincronizan automáticamente entre dispositivos.
+5. Usa Backup para descargar un JSON y Restaurar para importar el archivo en otro dispositivo.
+
+Limitaciones importantes:
+- Las alarmas reales no están implementadas en esta primera versión; se guardan horarios y puede marcarse una toma.
+- Adjuntos de receta se guardan localmente en el navegador y se incluyen en el backup.
+- No usar datos médicos reales sensibles hasta implementar seguridad, cifrado y un mecanismo de almacenamiento fiable.
+- Los promedios son descriptivos y no constituyen diagnóstico médico.
