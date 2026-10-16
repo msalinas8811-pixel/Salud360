@@ -7,7 +7,7 @@
 <meta name="description" content="SaludPlus: seguimiento personal de presión arterial, glucosa, medicamentos y consultas.">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="saludplus-logo.svg" type="image/svg+xml">
-<title>SaludPlus v17</title>
+<title>SaludPlus v18</title>
 <style>
 :root{--teal:#0879c9;--teal2:#16b8c1;--ink:#102b46;--muted:#5c7185;--bg:#f3f8fc;--card:#fff;--line:#dce8f1;--red:#b42318;--amber:#a15c00}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:1050px;margin:auto;min-height:100vh}.top{background:linear-gradient(120deg,#07345b,#0879c9,#16b8c1);color:white;padding:22px 18px 18px;border-radius:0 0 24px 24px}.topline{display:flex;align-items:center;justify-content:space-between;gap:12px}.brandlockup{display:flex;align-items:center;gap:12px}.brandlogo{width:54px;height:54px;object-fit:contain;background:#fff;border-radius:15px;padding:4px}.brand{font-weight:800;font-size:29px;letter-spacing:-.7px;color:#fff}.brand span{color:#65d9f1}.sub{opacity:.92;font-size:13px;margin-top:4px}.pill{border:1px solid #ffffff66;border-radius:99px;padding:7px 10px;font-size:12px;white-space:nowrap}.nav{display:flex;gap:7px;overflow:auto;padding:12px 12px 4px;position:sticky;top:0;background:var(--bg);z-index:3}.nav button{border:1px solid var(--line);background:white;color:var(--muted);border-radius:12px;padding:10px 12px;white-space:nowrap;font-size:13px}.nav button.active{background:var(--teal);color:white;border-color:var(--teal)}main{padding:14px 14px 40px}.view{display:none}.view.active{display:block}.section-head{display:flex;align-items:start;justify-content:space-between;gap:12px;margin:4px 0 14px}.section-head h2{margin:0;font-size:22px}.muted{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:15px;box-shadow:0 2px 8px #183b4308;min-width:0}.metric{font-size:27px;font-weight:800;letter-spacing:-.8px;margin:7px 0}.metric small{font-size:13px;font-weight:600;letter-spacing:0}.card h3{margin:0 0 10px;font-size:15px}.row{display:flex;align-items:center;gap:10px}.row.between{justify-content:space-between}.iconbox{width:39px;height:39px;border-radius:13px;display:grid;place-items:center;background:#dff7f3;font-size:20px;flex-shrink:0}.btn{border:0;border-radius:12px;background:var(--teal);color:white;padding:11px 14px;font-weight:700}.btn.secondary{background:#e4f4f2;color:#0f625c}.btn.ghost{background:white;color:var(--teal);border:1px solid var(--line)}.btn.danger{background:#fff0ee;color:var(--red)}.btn.small{padding:7px 10px;font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#48616a}.field input,.field select,.field textarea{width:100%;padding:11px;border:1px solid #cbdcde;border-radius:10px;background:white;color:var(--ink);min-width:0}.field textarea{min-height:78px;resize:vertical}.formcard{margin-bottom:14px}.formcard h3{margin-bottom:14px}.form-actions{display:flex;gap:8px;margin-top:13px;flex-wrap:wrap}.list{display:grid;gap:9px}.item{background:white;border:1px solid var(--line);border-radius:13px;padding:12px;display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.item strong{display:block;font-size:14px}.item p{margin:4px 0 0;color:var(--muted);font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere}.tag{display:inline-block;font-size:11px;border-radius:99px;padding:4px 8px;background:#e4f4f2;color:#0f625c;margin-top:5px}.empty{border:1px dashed #bfd2d4;border-radius:14px;padding:20px;text-align:center;color:var(--muted);font-size:13px}.notice{padding:12px 13px;background:#fff8e8;border:1px solid #f2dfb5;border-radius:12px;color:#79520b;font-size:12px;line-height:1.5;margin:12px 0}.goodnote{padding:12px;background:#e8f7f2;border-radius:12px;color:#155e54;font-size:12px;line-height:1.5}.bp-status{display:inline-block;padding:6px 10px;border-radius:9px;font-size:12px;font-weight:800;margin:2px 0 8px}.bp-green{background:#dcfce7;color:#166534;border:1px solid #86efac}.bp-yellow{background:#fef9c3;color:#854d0e;border:1px solid #fde047}.bp-orange{background:#ffedd5;color:#9a3412;border:1px solid #fdba74}.bp-red{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}.bp-card-green{border-color:#22c55e;background:#f0fdf4}.bp-card-yellow{border-color:#eab308;background:#fefce8}.bp-card-orange{border-color:#f97316;background:#fff7ed}.bp-card-red{border-color:#ef4444;background:#fef2f2}.hidden{display:none!important}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:12px}td,th{text-align:left;padding:9px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--muted)}.smallmuted{font-size:11px;color:var(--muted)}.report-block{margin-bottom:14px}.report-table{width:100%;min-width:540px}.report-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.report-kpi{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfefe}.report-kpi strong{display:block;font-size:21px;margin-top:5px}@media print{.top,.nav,.form-actions,.footer,.notice{display:none!important}body{background:white}.view{display:none!important}#reportes.view.active{display:block!important}main{padding:0}.card{box-shadow:none;break-inside:avoid}}.footer{text-align:center;padding:0 18px 26px;color:var(--muted);font-size:11px}
@@ -34,6 +34,39 @@
   <div class="card"><div class="row"><div class="iconbox">＋</div><div class="muted">Consultas</div></div><div class="metric" id="homeVisits">0</div><div class="muted">Registradas</div></div>
  </div>
  <div class="card" style="margin-top:14px"><div class="row between"><div><h3>Agua de hoy</h3><div class="muted" id="waterSummary">0 ml registrados</div></div><button class="btn small" onclick="showView('agua')">Registrar agua</button></div><div style="height:10px;background:#e4eef4;border-radius:99px;overflow:hidden;margin-top:10px"><div id="waterBar" style="height:100%;width:0;background:linear-gradient(90deg,#0879c9,#16b8c1);border-radius:99px"></div></div></div><div class="two" style="margin-top:14px"><div class="card" id="avgBPCard"><h3>Promedio de presión (últimas 7 jornadas registradas)</h3><div class="metric" id="avgBP">—</div><div id="avgBPStatus" class="bp-status" hidden></div><div class="muted" id="avgBPSub">Se calcula con las mediciones guardadas.</div><div class="muted" style="margin-top:8px">PAM promedio: <strong id="homePamAvg">—</strong></div></div><div class="card"><h3>Próximas citas</h3><div id="upcomingVisits" class="list"><div class="empty">No hay citas registradas.</div></div></div></div>
+ <div class="card home-panorama" style="margin-top:14px">
+  <div class="section-head"><div><h3>Panorama del paciente</h3><div class="muted">Resumen basado en la información registrada</div></div><button class="btn small secondary" onclick="showView('paciente')">Editar perfil</button></div>
+  <div class="two">
+   <div class="card soft-card"><h3>Promedios de presión y PAM por periodo</h3>
+    <div class="formgrid">
+     <div class="field"><label for="homeAvgStart">Desde</label><input id="homeAvgStart" type="date"></div>
+     <div class="field"><label for="homeAvgEnd">Hasta</label><input id="homeAvgEnd" type="date"></div>
+    </div>
+    <div class="form-actions"><button class="btn" id="homeUpdateAverages" type="button">Actualizar promedios</button></div>
+    <div class="report-kpis" style="margin-top:10px">
+     <div class="report-kpi"><span class="muted">Sistólica / diastólica</span><strong id="homePeriodBP">—</strong></div>
+     <div class="report-kpi"><span class="muted">PAM promedio estimada</span><strong id="homePeriodPAM">—</strong></div>
+     <div class="report-kpi"><span class="muted">Mediciones incluidas</span><strong id="homePeriodCount">0</strong></div>
+    </div>
+    <p class="smallmuted" id="homePeriodMessage">Selecciona el periodo y pulsa Actualizar promedios.</p>
+   </div>
+   <div class="card soft-card"><h3>Datos médicos importantes</h3>
+    <p><strong>Paciente:</strong> <span id="homePatientName">No registrado</span></p>
+    <p><strong>Tipo de sangre:</strong> <span id="homeBloodType">No registrado</span></p>
+    <p><strong>Alergias a medicamentos:</strong> <span id="homeMedAllergies">No registradas</span></p>
+    <p><strong>Alergias a comidas u otras:</strong> <span id="homeOtherAllergies">No registradas</span></p>
+    <p><strong>Contacto de emergencia:</strong> <span id="homeEmergency">No registrado</span></p>
+   </div>
+  </div>
+  <div class="two" style="margin-top:14px">
+   <div class="card soft-card"><h3>Tabla de presión arterial</h3><div class="tablewrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Hora</th><th>Izquierdo</th><th>Derecho</th><th>PAM aprox.</th></tr></thead><tbody id="homePressureTable"><tr><td colspan="5">Sin mediciones registradas.</td></tr></tbody></table></div><button class="btn ghost small" style="margin-top:10px" onclick="showView('presion')">Ver todas las mediciones</button></div>
+   <div class="card soft-card"><h3>Medicamentos y horarios</h3><div id="homeMedicationSchedule" class="list"><div class="empty">No hay medicamentos registrados.</div></div><button class="btn ghost small" style="margin-top:10px" onclick="showView('medicamentos')">Administrar medicamentos</button></div>
+  </div>
+  <div class="two" style="margin-top:14px">
+   <div class="card soft-card"><h3>Próximas citas</h3><div id="homeUpcomingAppointments" class="list"><div class="empty">No hay próximas citas registradas.</div></div></div>
+   <div class="card soft-card"><h3>Citas completadas / anteriores</h3><div id="homeCompletedAppointments" class="list"><div class="empty">No hay citas anteriores registradas.</div></div></div>
+  </div>
+ </div>
  <div class="notice">SaludPlus ayuda a organizar mediciones y documentos; no diagnostica ni sustituye a un profesional sanitario. Si tienes síntomas preocupantes, busca atención médica.</div>
 </section>
 <section id="paciente" class="view">
@@ -178,9 +211,40 @@ function render(){
  document.getElementById('visitList').innerHTML=data.visits.length?[...data.visits].sort((a,b)=>b.date.localeCompare(a.date)).map(x=>listItem(`${esc(x.doctor||'Consulta médica')} · ${fmtDate(x.date)}`,`${esc(x.specialty||'Especialidad no indicada')}${x.nextDate?'\nPróxima cita: '+fmtDate(x.nextDate):''}${x.notes?'\n'+esc(x.notes):''}${x.fileName?'\nArchivo: '+esc(x.fileName):''}`,`${x.fileData?`<button class="btn secondary small" onclick="openAttachment('${x.id}')">Ver archivo</button>`:''}${removeBtn('visits',x.id)}`)).join(''):empty('No hay consultas registradas.');
  document.getElementById('upcomingVisits').innerHTML=visits.filter(v=>v.nextDate&&v.nextDate>=today()).length?visits.filter(v=>v.nextDate&&v.nextDate>=today()).slice(0,3).map(v=>listItem(fmtDate(v.nextDate),esc(v.doctor||'Consulta médica')+' · '+esc(v.specialty||'')).replace('class="item"','class="item"')).join(''):empty('No hay citas futuras registradas.');
  document.getElementById('backupStats').textContent=`${data.bp.length} mediciones de presión · ${data.glucose.length} registros de glucosa · ${data.meds.length} medicamentos · ${data.visits.length} consultas`;
- renderPatient();renderWater();renderAlarms();
+ renderPatient();renderWater();renderAlarms();renderHomePanorama();
  refreshPrescriptionOptions();
  if(typeof applyLanguage==='function') applyLanguage(currentLang);
+}
+function renderHomePanorama(){
+ const p=data.patient||{}, put=(id,value,fallback='No registrado')=>{const e=document.getElementById(id);if(e)e.textContent=(value&&String(value).trim())?String(value):fallback};
+ put('homePatientName',p.name);put('homeBloodType',p.blood);put('homeMedAllergies',p.medAllergies,'No registradas');put('homeOtherAllergies',p.otherAllergies,'No registradas');
+ put('homeEmergency',[p.emergencyName,p.emergencyPhone].filter(Boolean).join(' · '),'No registrado');
+ const start=document.getElementById('homeAvgStart'),end=document.getElementById('homeAvgEnd');
+ if(start&&!start.value){const d=new Date();d.setDate(d.getDate()-6);start.value=isoDateLocal(d)}
+ if(end&&!end.value)end.value=today();
+ const bps=[...(data.bp||[])].sort((a,b)=>(b.date||'').localeCompare(a.date||'')||(b.time||'').localeCompare(a.time||''));
+ const body=document.getElementById('homePressureTable');
+ if(body)body.innerHTML=bps.length?bps.slice(0,12).map(x=>{const lOk=Number(x.ls)>0&&Number(x.ld)>0,rOk=Number(x.rs)>0&&Number(x.rd)>0;const lp=lOk?(Number(x.ls)+2*Number(x.ld))/3:null,rp=rOk?(Number(x.rs)+2*Number(x.rd))/3:null;const ps=[lp,rp].filter(v=>v!==null);return `<tr><td>${esc(fmtDate(x.date))}</td><td>${esc(x.time||'—')}</td><td>${lOk?`${Number(x.ls)}/${Number(x.ld)}`:'—'}</td><td>${rOk?`${Number(x.rs)}/${Number(x.rd)}`:'—'}</td><td>${ps.length?average(ps).toFixed(1):'—'}</td></tr>`}).join(''):'<tr><td colspan="5">Sin mediciones registradas.</td></tr>';
+ const med=document.getElementById('homeMedicationSchedule');
+ if(med)med.innerHTML=data.meds.length?data.meds.map(m=>listItem(esc(m.name||'Medicamento'),`Dosis: ${esc(m.dose||'No indicada')} · Hora(s): ${esc(m.time||'No indicada')}${m.instructions?' · '+esc(m.instructions):''}`,'')).join(''):empty('No hay medicamentos registrados.');
+ const visits=data.visits||[],todayStr=today();
+ const upcoming=visits.filter(v=>(v.nextDate&&v.nextDate>=todayStr)||(!v.nextDate&&v.date>=todayStr)).sort((a,b)=>(a.nextDate||a.date||'').localeCompare(b.nextDate||b.date||''));
+ const completed=visits.filter(v=>v.date&&v.date<todayStr).sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+ const up=document.getElementById('homeUpcomingAppointments'),done=document.getElementById('homeCompletedAppointments');
+ if(up)up.innerHTML=upcoming.length?upcoming.map(v=>listItem(esc(fmtDate(v.nextDate||v.date)),`${esc(v.doctor||'Consulta médica')} · ${esc(v.specialty||'')}${v.notes?' · '+esc(v.notes):''}`, '')).join(''):empty('No hay próximas citas registradas.');
+ if(done)done.innerHTML=completed.length?completed.slice(0,8).map(v=>listItem(esc(fmtDate(v.date)),`${esc(v.doctor||'Consulta médica')} · ${esc(v.specialty||'')}${v.notes?' · '+esc(v.notes):''}`, '')).join(''):empty('No hay citas anteriores registradas.');
+}
+function calculateHomePeriodAverages(){
+ const start=document.getElementById('homeAvgStart')?.value,end=document.getElementById('homeAvgEnd')?.value;
+ const bpEl=document.getElementById('homePeriodBP'),pamEl=document.getElementById('homePeriodPAM'),countEl=document.getElementById('homePeriodCount'),msg=document.getElementById('homePeriodMessage');
+ if(!start||!end){if(msg)msg.textContent='Selecciona una fecha inicial y final.';return}
+ if(start>end){if(msg)msg.textContent='La fecha inicial no puede ser posterior a la fecha final.';return}
+ const rows=(data.bp||[]).filter(x=>x.date>=start&&x.date<=end);
+ const values=rows.flatMap(x=>{const a=[];if(Number(x.ls)>0&&Number(x.ld)>0)a.push({s:Number(x.ls),d:Number(x.ld),p:(Number(x.ls)+2*Number(x.ld))/3});if(Number(x.rs)>0&&Number(x.rd)>0)a.push({s:Number(x.rs),d:Number(x.rd),p:(Number(x.rs)+2*Number(x.rd))/3});return a});
+ if(bpEl)bpEl.textContent=values.length?`${Math.round(average(values.map(v=>v.s)))}/${Math.round(average(values.map(v=>v.d)))} mmHg`:'—';
+ if(pamEl)pamEl.textContent=values.length?average(values.map(v=>v.p)).toFixed(1)+' mmHg':'—';
+ if(countEl)countEl.textContent=String(rows.length);
+ if(msg)msg.textContent=values.length?`Periodo ${fmtDate(start)} a ${fmtDate(end)}. Se incluyeron ${values.length} lecturas válidas de ${rows.length} registros.`:'No hay lecturas completas en el periodo seleccionado.';
 }
 function refreshPrescriptionOptions(){const s=document.getElementById('medPrescription');if(!s)return;const old=s.value;s.innerHTML='<option value="">Sin receta vinculada</option>'+data.visits.map(v=>`<option value="${v.id}">${esc(fmtDate(v.date)+' · '+(v.doctor||'Consulta')+(v.fileName?' · '+v.fileName:''))}</option>`).join('');if([...s.options].some(o=>o.value===old))s.value=old}
 function id(){return crypto.randomUUID?crypto.randomUUID():String(Date.now())+Math.random().toString(16).slice(2)}
@@ -303,6 +367,7 @@ function initializeReportDates(){
 }
 initializeReportDates();
 document.getElementById('exportReportBtn').addEventListener('click',exportReportCSV);
+const homeAvgBtn=document.getElementById('homeUpdateAverages');if(homeAvgBtn)homeAvgBtn.addEventListener('click',calculateHomePeriodAverages);
 document.getElementById('printReportBtn').addEventListener('click',()=>{if(!window.currentHealthReport){if(!reportHtml())return}window.print()});
 
 

@@ -31,3 +31,11 @@ VERSION 17 - CORRECCIONES DE REPORTES
 - Se añadió detalle de las mediciones incluidas y se reforzó la acción de generar el reporte clínico completo.
 - Se actualizó la caché del service worker a v17.
 - Recuerda exportar un respaldo antes de sustituir los archivos publicados.
+
+
+VERSION 18 - PANORAMA COMPLETO EN INICIO
+- Filtros por fecha desde/hasta y botón Actualizar promedios de presión y PAM.
+- Tabla de las últimas mediciones de presión con fecha, hora, ambos brazos y PAM aproximada.
+- Resumen de tipo sanguíneo, alergias y contacto de emergencia desde el perfil.
+- Lista de medicamentos con dosis y horarios registrados.
+- Listas separadas de próximas citas y consultas anteriores/completadas según fecha registrada.
