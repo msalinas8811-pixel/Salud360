@@ -13,3 +13,10 @@ PRIVACIDAD Y LÍMITES
 Los registros se guardan en localStorage de este navegador/dispositivo; no se sincronizan automáticamente. Exporta y conserva el backup en un lugar seguro. No uses información real de otra persona sin su permiso.
 
 Las alarmas web solo se revisan mientras la página está visible/activa. iOS puede suspender páginas y no garantiza alarmas cuando la app está cerrada; no sustituye Reloj/Recordatorios ni un sistema clínico. El control de agua es orientativo: sigue las indicaciones sanitarias personales, especialmente si hay restricción de líquidos. La app no diagnostica ni sustituye al profesional sanitario.
+
+
+VERSION 15 - CORRECCIONES
+- Fecha local en formato AAAA-MM-DD para evitar fallos de comparación en Safari/iPhone.
+- Traducción aplicada también después de actualizar listas y datos de la pantalla.
+- Caché PWA actualizada para solicitar los archivos de la versión 15.
+- Los recordatorios web requieren que el navegador/app esté activo; no sustituyen alarmas del sistema.
