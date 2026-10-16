@@ -39,3 +39,11 @@ VERSION 18 - PANORAMA COMPLETO EN INICIO
 - Resumen de tipo sanguíneo, alergias y contacto de emergencia desde el perfil.
 - Lista de medicamentos con dosis y horarios registrados.
 - Listas separadas de próximas citas y consultas anteriores/completadas según fecha registrada.
+
+
+VERSION 20 - GRÁFICAS Y ASISTENTES
+- Se añade una vista de gráficas para presión arterial, glucosa, pulso, peso y consumo de agua cuando existen registros.
+- Se añade registro opcional de pulso y peso.
+- Se añade interfaz para seleccionar asistencia general o personalizada con autorización.
+- IMPORTANTE: el chat es solo interfaz hasta configurar un proveedor de IA a través de un servidor seguro. No envía preguntas ni datos a ningún servicio en esta versión.
+- Se conservan los datos locales existentes; realiza un respaldo antes de actualizar.
