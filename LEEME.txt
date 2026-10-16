@@ -47,3 +47,12 @@ VERSION 20 - GRÁFICAS Y ASISTENTES
 - Se añade interfaz para seleccionar asistencia general o personalizada con autorización.
 - IMPORTANTE: el chat es solo interfaz hasta configurar un proveedor de IA a través de un servidor seguro. No envía preguntas ni datos a ningún servicio en esta versión.
 - Se conservan los datos locales existentes; realiza un respaldo antes de actualizar.
+
+
+VERSIÓN 21 - CONEXIÓN PREPARADA CON SERVIDOR DE IA
+- El chat ahora envía preguntas al endpoint /api/chat de un servidor configurado y muestra errores de conexión.
+- Incluye backend/ con servidor Node y conexión a OpenAI Responses API.
+- En Chat IA se puede guardar la URL pública del backend y probar /health.
+- Para activar respuestas reales aún debes desplegar backend y guardar OPENAI_API_KEY como variable secreta del hosting. No pegues esa clave en la PWA ni en el chat.
+- Guía completa en backend/README.md.
+- Caché PWA actualizada a v21.
