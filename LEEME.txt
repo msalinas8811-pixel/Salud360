@@ -19,9 +19,3 @@ Limitaciones importantes:
 - Los promedios son descriptivos y no constituyen diagnóstico médico.
 \nActualización: incluye módulo de reportes semanales (últimos 7 días) y mensuales (mes calendario), resumen de presión y glucosa, detalle por medición, exportación CSV e impresión/Guardar PDF desde el navegador. Los reportes son descriptivos y no diagnósticos.\n
 Identidad visual actualizada: SaludPlus, logo de gota y hojas en azul, turquesa y verde. Eslogan: Control hoy, bienestar mañana.
-
-IMPORTANTE PARA SUBIR DESDE IPHONE: todos los archivos de esta versión están en la raíz del repositorio. Los iconos y el logo se referencian desde la raíz para que funcionen con GitHub Upload Files en iOS.
-
-NUEVO: colores orientativos para glucosa; recordatorios web para medicamentos y agua mientras la app está activa; configuración y registro de agua; gráficas de presión y glucosa en reportes diarios, semanales y mensuales. Los avisos web no son alarmas garantizadas cuando iOS suspende/cierra la app. Los rangos de glucosa son referencias frecuentes para adultos con diabetes y no diagnostican.
-
-ACTUALIZACIÓN DE CABECERA: selector de idioma ES/EN/FR, botón de ayuda con instrucciones y botón de inicio. El selector traduce la cabecera, la navegación y el panel de ayuda; los formularios y el resto del contenido todavía se muestran principalmente en español.
