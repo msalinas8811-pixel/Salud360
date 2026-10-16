@@ -7,7 +7,7 @@
 <meta name="description" content="SaludPlus: seguimiento personal de presión arterial, glucosa, medicamentos y consultas.">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="saludplus-logo.svg" type="image/svg+xml">
-<title>SaludPlus v15</title>
+<title>SaludPlus v16</title>
 <style>
 :root{--teal:#0879c9;--teal2:#16b8c1;--ink:#102b46;--muted:#5c7185;--bg:#f3f8fc;--card:#fff;--line:#dce8f1;--red:#b42318;--amber:#a15c00}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:1050px;margin:auto;min-height:100vh}.top{background:linear-gradient(120deg,#07345b,#0879c9,#16b8c1);color:white;padding:22px 18px 18px;border-radius:0 0 24px 24px}.topline{display:flex;align-items:center;justify-content:space-between;gap:12px}.brandlockup{display:flex;align-items:center;gap:12px}.brandlogo{width:54px;height:54px;object-fit:contain;background:#fff;border-radius:15px;padding:4px}.brand{font-weight:800;font-size:29px;letter-spacing:-.7px;color:#fff}.brand span{color:#65d9f1}.sub{opacity:.92;font-size:13px;margin-top:4px}.pill{border:1px solid #ffffff66;border-radius:99px;padding:7px 10px;font-size:12px;white-space:nowrap}.nav{display:flex;gap:7px;overflow:auto;padding:12px 12px 4px;position:sticky;top:0;background:var(--bg);z-index:3}.nav button{border:1px solid var(--line);background:white;color:var(--muted);border-radius:12px;padding:10px 12px;white-space:nowrap;font-size:13px}.nav button.active{background:var(--teal);color:white;border-color:var(--teal)}main{padding:14px 14px 40px}.view{display:none}.view.active{display:block}.section-head{display:flex;align-items:start;justify-content:space-between;gap:12px;margin:4px 0 14px}.section-head h2{margin:0;font-size:22px}.muted{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:15px;box-shadow:0 2px 8px #183b4308;min-width:0}.metric{font-size:27px;font-weight:800;letter-spacing:-.8px;margin:7px 0}.metric small{font-size:13px;font-weight:600;letter-spacing:0}.card h3{margin:0 0 10px;font-size:15px}.row{display:flex;align-items:center;gap:10px}.row.between{justify-content:space-between}.iconbox{width:39px;height:39px;border-radius:13px;display:grid;place-items:center;background:#dff7f3;font-size:20px;flex-shrink:0}.btn{border:0;border-radius:12px;background:var(--teal);color:white;padding:11px 14px;font-weight:700}.btn.secondary{background:#e4f4f2;color:#0f625c}.btn.ghost{background:white;color:var(--teal);border:1px solid var(--line)}.btn.danger{background:#fff0ee;color:var(--red)}.btn.small{padding:7px 10px;font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#48616a}.field input,.field select,.field textarea{width:100%;padding:11px;border:1px solid #cbdcde;border-radius:10px;background:white;color:var(--ink);min-width:0}.field textarea{min-height:78px;resize:vertical}.formcard{margin-bottom:14px}.formcard h3{margin-bottom:14px}.form-actions{display:flex;gap:8px;margin-top:13px;flex-wrap:wrap}.list{display:grid;gap:9px}.item{background:white;border:1px solid var(--line);border-radius:13px;padding:12px;display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.item strong{display:block;font-size:14px}.item p{margin:4px 0 0;color:var(--muted);font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere}.tag{display:inline-block;font-size:11px;border-radius:99px;padding:4px 8px;background:#e4f4f2;color:#0f625c;margin-top:5px}.empty{border:1px dashed #bfd2d4;border-radius:14px;padding:20px;text-align:center;color:var(--muted);font-size:13px}.notice{padding:12px 13px;background:#fff8e8;border:1px solid #f2dfb5;border-radius:12px;color:#79520b;font-size:12px;line-height:1.5;margin:12px 0}.goodnote{padding:12px;background:#e8f7f2;border-radius:12px;color:#155e54;font-size:12px;line-height:1.5}.bp-status{display:inline-block;padding:6px 10px;border-radius:9px;font-size:12px;font-weight:800;margin:2px 0 8px}.bp-green{background:#dcfce7;color:#166534;border:1px solid #86efac}.bp-yellow{background:#fef9c3;color:#854d0e;border:1px solid #fde047}.bp-orange{background:#ffedd5;color:#9a3412;border:1px solid #fdba74}.bp-red{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}.bp-card-green{border-color:#22c55e;background:#f0fdf4}.bp-card-yellow{border-color:#eab308;background:#fefce8}.bp-card-orange{border-color:#f97316;background:#fff7ed}.bp-card-red{border-color:#ef4444;background:#fef2f2}.hidden{display:none!important}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:12px}td,th{text-align:left;padding:9px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--muted)}.smallmuted{font-size:11px;color:var(--muted)}.report-block{margin-bottom:14px}.report-table{width:100%;min-width:540px}.report-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.report-kpi{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfefe}.report-kpi strong{display:block;font-size:21px;margin-top:5px}@media print{.top,.nav,.form-actions,.footer,.notice{display:none!important}body{background:white}.view{display:none!important}#reportes.view.active{display:block!important}main{padding:0}.card{box-shadow:none;break-inside:avoid}}.footer{text-align:center;padding:0 18px 26px;color:var(--muted);font-size:11px}
@@ -32,7 +32,7 @@
   <div class="card"><div class="row"><div class="iconbox">◷</div><div class="muted">Medicamentos</div></div><div class="metric" id="homeMeds">0</div><div class="muted">Configurados</div></div>
   <div class="card"><div class="row"><div class="iconbox">＋</div><div class="muted">Consultas</div></div><div class="metric" id="homeVisits">0</div><div class="muted">Registradas</div></div>
  </div>
- <div class="card" style="margin-top:14px"><div class="row between"><div><h3>Agua de hoy</h3><div class="muted" id="waterSummary">0 ml registrados</div></div><button class="btn small" onclick="showView('agua')">Registrar agua</button></div><div style="height:10px;background:#e4eef4;border-radius:99px;overflow:hidden;margin-top:10px"><div id="waterBar" style="height:100%;width:0;background:linear-gradient(90deg,#0879c9,#16b8c1);border-radius:99px"></div></div></div><div class="two" style="margin-top:14px"><div class="card" id="avgBPCard"><h3>Promedio de presión (últimas 7 jornadas registradas)</h3><div class="metric" id="avgBP">—</div><div id="avgBPStatus" class="bp-status" hidden></div><div class="muted" id="avgBPSub">Se calcula con las mediciones guardadas.</div></div><div class="card"><h3>Próximas citas</h3><div id="upcomingVisits" class="list"><div class="empty">No hay citas registradas.</div></div></div></div>
+ <div class="card" style="margin-top:14px"><div class="row between"><div><h3>Agua de hoy</h3><div class="muted" id="waterSummary">0 ml registrados</div></div><button class="btn small" onclick="showView('agua')">Registrar agua</button></div><div style="height:10px;background:#e4eef4;border-radius:99px;overflow:hidden;margin-top:10px"><div id="waterBar" style="height:100%;width:0;background:linear-gradient(90deg,#0879c9,#16b8c1);border-radius:99px"></div></div></div><div class="two" style="margin-top:14px"><div class="card" id="avgBPCard"><h3>Promedio de presión (últimas 7 jornadas registradas)</h3><div class="metric" id="avgBP">—</div><div id="avgBPStatus" class="bp-status" hidden></div><div class="muted" id="avgBPSub">Se calcula con las mediciones guardadas.</div><div class="muted" style="margin-top:8px">PAM promedio: <strong id="homePamAvg">—</strong></div></div><div class="card"><h3>Próximas citas</h3><div id="upcomingVisits" class="list"><div class="empty">No hay citas registradas.</div></div></div></div>
  <div class="notice">SaludPlus ayuda a organizar mediciones y documentos; no diagnostica ni sustituye a un profesional sanitario. Si tienes síntomas preocupantes, busca atención médica.</div>
 </section>
 <section id="paciente" class="view">
@@ -94,7 +94,7 @@
    <div class="field"><label>Tipo de reporte</label><select id="reportPeriod"><option value="week">Semanal (últimos 7 días)</option><option value="month">Mensual (mes calendario actual)</option></select></div>
    <div class="field"><label>Fecha de referencia</label><input id="reportDate" type="date"></div>
   </div>
-  <div class="form-actions"><button class="btn" id="generateReportBtn">Actualizar reporte</button><button class="btn secondary" id="exportReportBtn">Exportar CSV</button><button class="btn ghost" id="printReportBtn">Imprimir / Guardar PDF</button></div>
+  <div class="form-actions"><button class="btn" id="generateReportBtn">Actualizar reporte</button><button class="btn secondary" id="clinicalReportBtn" type="button">Reporte clínico completo</button><button class="btn secondary" id="exportReportBtn">Exportar CSV</button><button class="btn ghost" id="printReportBtn">Imprimir / Guardar PDF</button></div>
   <p class="smallmuted">El reporte incluye únicamente registros guardados en este dispositivo dentro del periodo elegido.</p>
  </div>
  <div id="reportOutput">
@@ -146,7 +146,9 @@ function render(){
  document.getElementById('homeGlucoseSub').textContent=gl.length?`${fmtDate(gl[0].date)} · ${gl[0].when}`:'Sin registros';
  document.getElementById('homeMeds').textContent=data.meds.length;
  document.getElementById('homeVisits').textContent=data.visits.length;
- const recent=bp.slice(0,7);const ss=recent.flatMap(x=>[+x.ls,+x.rs]),dd=recent.flatMap(x=>[+x.ld,+x.rd]);
+ const validBP=x=>[x.ls,x.ld,x.rs,x.rd].every(v=>v!==''&&v!==null&&v!==undefined&&Number.isFinite(Number(v))&&Number(v)>0);
+ const recent=bp.filter(validBP).slice(0,7);
+ const ss=recent.flatMap(x=>[Number(x.ls),Number(x.rs)]),dd=recent.flatMap(x=>[Number(x.ld),Number(x.rd)]);
  const avgS=ss.length?average(ss):null,avgD=dd.length?average(dd):null;
  document.getElementById('avgBP').textContent=ss.length?`${Math.round(avgS)}/${Math.round(avgD)} mmHg`:'—';
  document.getElementById('avgBPSub').textContent=ss.length?`${recent.length} jornadas/mediciones recientes incluidas; clasificación orientativa para adultos.`:'Se calcula con las mediciones guardadas.';
@@ -156,9 +158,11 @@ function render(){
  setBPStatus('bpAverageCard','bpAverageStatus','bpCombinedAvg','bpAverageAdvice',avgS,avgD);
  document.getElementById('bpSysAvg').textContent=ss.length?Math.round(average(ss))+' mmHg':'—';
  document.getElementById('bpDiaAvg').textContent=dd.length?Math.round(average(dd))+' mmHg':'—';
- const pams=recent.flatMap(x=>[(+x.ls+2*(+x.ld))/3,(+x.rs+2*(+x.rd))/3]);
- document.getElementById('bpPamAvg').textContent=pams.length?Math.round(average(pams))+' mmHg':'—';
- document.getElementById('bpDiff').textContent=recent.length?Math.round(average(recent.map(x=>Math.abs(+x.ls-+x.rs))))+' mmHg':'—';
+ const pams=recent.flatMap(x=>[(Number(x.ls)+2*Number(x.ld))/3,(Number(x.rs)+2*Number(x.rd))/3]).filter(Number.isFinite);
+ const pamText=pams.length?average(pams).toFixed(1)+' mmHg':'—';
+ document.getElementById('bpPamAvg').textContent=pamText;
+ const homePam=document.getElementById('homePamAvg');if(homePam)homePam.textContent=pamText;
+ document.getElementById('bpDiff').textContent=recent.length?Math.round(average(recent.map(x=>Math.abs(Number(x.ls)-Number(x.rs)))))+' mmHg':'—';
  document.getElementById('bpCount').textContent=`${bp.length} registros`;
  document.getElementById('bpList').innerHTML=bp.length?bp.map(x=>listItem(`${fmtDate(x.date)} · ${esc(x.time)} · Toma ${esc(x.take)}`,`Izquierdo ${x.ls}/${x.ld} · pulso ${x.lp||'—'} | Derecho ${x.rs}/${x.rd} · pulso ${x.rp||'—'}\nPAM aprox.: ${Math.round((+x.ls+2*(+x.ld))/3)} / ${Math.round((+x.rs+2*(+x.rd))/3)} · Dif. sistólica: ${Math.abs(+x.ls-+x.rs)} mmHg${x.notes?'\n'+esc(x.notes):''}`,removeBtn('bp',x.id))).join(''):empty('Aún no hay mediciones.');
  document.getElementById('glucoseAvg').textContent=gl.length?`Promedio de registros: ${Math.round(average(gl.map(x=>+x.value)))} mg/dL`:'Promedio: —';
@@ -196,13 +200,16 @@ function reportHtml(){
  const period=document.getElementById('reportPeriod').value,ref=document.getElementById('reportDate').value||today(),r=reportRange(period,ref);
  const bps=data.bp.filter(x=>withinRange(x,r)).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
  const gls=data.glucose.filter(x=>withinRange(x,r)).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
- const allSys=bps.flatMap(x=>[+x.ls,+x.rs]),allDia=bps.flatMap(x=>[+x.ld,+x.rd]);
- const avgSys=average(allSys),avgDia=average(allDia),avgG=average(gls.map(x=>+x.value));
+ const validBps=bps.filter(x=>[x.ls,x.ld,x.rs,x.rd].every(v=>v!==''&&v!==null&&v!==undefined&&Number.isFinite(Number(v))&&Number(v)>0));
+ const allSys=validBps.flatMap(x=>[Number(x.ls),Number(x.rs)]),allDia=validBps.flatMap(x=>[Number(x.ld),Number(x.rd)]);
+ const avgSys=average(allSys),avgDia=average(allDia),avgG=average(gls.map(x=>Number(x.value)).filter(Number.isFinite));
+ const avgPam=average(validBps.flatMap(x=>[(Number(x.ls)+2*Number(x.ld))/3,(Number(x.rs)+2*Number(x.rd))/3]));
  const label=period==='week'?'Reporte semanal':'Reporte mensual';
  let out=`<div class="card report-block"><h3>${label}: ${fmtDate(r.start)} al ${fmtDate(r.end)}</h3><div class="report-kpis">
  <div class="report-kpi"><span class="muted">Mediciones de presión</span><strong>${bps.length}</strong></div>
  <div class="report-kpi"><span class="muted">Registros de glucosa</span><strong>${gls.length}</strong></div>
  <div class="report-kpi"><span class="muted">Promedio presión* </span><strong>${avgSys==null?'—':Math.round(avgSys)+'/'+Math.round(avgDia)+' mmHg'}</strong></div>
+ <div class="report-kpi"><span class="muted">PAM promedio aproximada</span><strong>${avgPam==null?'—':avgPam.toFixed(1)+' mmHg'}</strong></div>
  <div class="report-kpi"><span class="muted">Promedio glucosa</span><strong>${avgG==null?'—':Math.round(avgG)+' mg/dL'}</strong></div>
  </div><p class="smallmuted">*Promedio descriptivo de las cifras de ambos brazos registradas durante el periodo. No es una clasificación ni diagnóstico.</p></div>`;
  out+=`<div class="card report-block"><h3>Detalle de presión arterial</h3>`;
@@ -212,7 +219,7 @@ function reportHtml(){
  out+=gls.length?`<div class="tablewrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Hora</th><th>Resultado</th><th>Momento</th><th>Notas</th></tr></thead><tbody>${gls.map(x=>`<tr><td>${fmtDate(x.date)}</td><td>${esc(x.time)}</td><td>${x.value} mg/dL</td><td>${esc(x.when)}</td><td>${esc(x.notes||'')}</td></tr>`).join('')}</tbody></table></div>`:empty('No hay registros de glucosa en este periodo.');
  out+='</div>';
  document.getElementById('reportOutput').innerHTML=out;
- window.currentHealthReport={period,label,range:r,bps,gls,avgSys,avgDia,avgG};
+ window.currentHealthReport={period,label,range:r,bps,gls,avgSys,avgDia,avgPam,avgG};
 }
 function exportReportCSV(){
  const r=window.currentHealthReport;if(!r){reportHtml()}const q=window.currentHealthReport;
@@ -223,11 +230,48 @@ function exportReportCSV(){
  const csv=rows.map(row=>row.map(v=>`"${String(v??'').replace(/"/g,'""')}"`).join(',')).join('\r\n');
  const blob=new Blob(['\\ufeff'+csv],{type:'text/csv;charset=utf-8;'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`salud360-reporte-${q.period}-${q.range.start}-${q.range.end}.csv`;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
 }
+
+function clinicalReportHtml(){
+ const p=data.patient||{}, escv=v=>esc(v||'No registrado');
+ const validBP=data.bp.filter(x=>[x.ls,x.ld,x.rs,x.rd].every(v=>v!==''&&v!==null&&v!==undefined&&Number.isFinite(Number(v))&&Number(v)>0));
+ const sys=validBP.flatMap(x=>[Number(x.ls),Number(x.rs)]),dia=validBP.flatMap(x=>[Number(x.ld),Number(x.rd)]);
+ const pam=validBP.flatMap(x=>[(Number(x.ls)+2*Number(x.ld))/3,(Number(x.rs)+2*Number(x.rd))/3]);
+ const avg=(arr)=>arr.length?average(arr):null;
+ const avgBP=avg(sys),avgDia=avg(dia),avgPam=avg(pam);
+ const gl=[...data.glucose].filter(x=>Number.isFinite(Number(x.value))).sort((a,b)=>(b.date+b.time).localeCompare(a.date+a.time));
+ const bp=[...validBP].sort((a,b)=>(b.date+b.time).localeCompare(a.date+a.time));
+ const meds=[...data.meds], visits=[...data.visits].sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+ const upcoming=visits.filter(v=>v.nextDate&&v.nextDate>=today());
+ const water=data.water||{goal:2000,logs:[]}, waterLogs=(water.logs||[]),todayWater=waterLogs.filter(x=>x.date===today()).reduce((s,x)=>s+(Number(x.ml)||0),0);
+ const section=(title,body)=>`<div class="card report-block"><h3>${title}</h3>${body}</div>`;
+ const rows=(pairs)=>`<div class="tablewrap"><table class="report-table"><tbody>${pairs.map(([k,v])=>`<tr><th>${esc(k)}</th><td>${escv(v)}</td></tr>`).join('')}</tbody></table></div>`;
+ const patient=section('1. Identificación y contacto',rows([
+ ['Nombre completo',p.name],['Fecha de nacimiento',p.birthDate?fmtDate(p.birthDate):''],['Sexo',p.sex],['Teléfono',p.phone],['Correo',p.email],['Contacto de emergencia',p.emergencyName],['Teléfono de emergencia',p.emergencyPhone],['Grupo sanguíneo',p.blood]
+ ]));
+ const safety=section('2. Antecedentes y seguridad médica',rows([
+ ['Padecimientos / antecedentes',p.conditions],['Alergias a medicamentos',p.medAllergies],['Otras alergias',p.otherAllergies],['Medicamentos e indicaciones anotados por el paciente',p.currentMeds],['Notas médicas importantes',p.medicalNotes]
+ ]));
+ const medBody=meds.length?`<div class="tablewrap"><table class="report-table"><thead><tr><th>Medicamento</th><th>Dosis</th><th>Hora</th><th>Inicio</th><th>Fin</th><th>Indicaciones</th></tr></thead><tbody>${meds.map(m=>`<tr><td>${esc(m.name)}</td><td>${esc(m.dose)}</td><td>${esc(m.time)}</td><td>${esc(m.start?fmtDate(m.start):'—')}</td><td>${esc(m.end?fmtDate(m.end):'—')}</td><td>${esc(m.instructions||'—')}</td></tr>`).join('')}</tbody></table></div>`:'<p>No hay medicamentos registrados en el módulo.</p>';
+ const medSection=section('3. Medicamentos registrados',medBody);
+ const bpSummary=`<div class="report-kpis"><div class="report-kpi"><span class="muted">Registros válidos</span><strong>${validBP.length}</strong></div><div class="report-kpi"><span class="muted">Promedio sistólica</span><strong>${avgBP==null?'—':Math.round(avgBP)+' mmHg'}</strong></div><div class="report-kpi"><span class="muted">Promedio diastólica</span><strong>${avgDia==null?'—':Math.round(avgDia)+' mmHg'}</strong></div><div class="report-kpi"><span class="muted">PAM media aprox.</span><strong>${avgPam==null?'—':avgPam.toFixed(1)+' mmHg'}</strong></div></div>`;
+ const bpRows=bp.length?`<div class="tablewrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Hora</th><th>Izquierdo</th><th>Derecho</th><th>Pulso izq./der.</th><th>PAM izq./der.</th><th>Notas</th></tr></thead><tbody>${bp.map(x=>`<tr><td>${esc(fmtDate(x.date))}</td><td>${esc(x.time||'—')}</td><td>${esc(x.ls)}/${esc(x.ld)}</td><td>${esc(x.rs)}/${esc(x.rd)}</td><td>${esc(x.lp||'—')} / ${esc(x.rp||'—')}</td><td>${Math.round((Number(x.ls)+2*Number(x.ld))/3)} / ${Math.round((Number(x.rs)+2*Number(x.rd))/3)}</td><td>${esc(x.notes||'—')}</td></tr>`).join('')}</tbody></table></div>`:'<p>No hay mediciones de presión registradas.</p>';
+ const bpSection=section('4. Presión arterial · resumen y registros',bpSummary+bpRows);
+ const glRows=gl.length?`<div class="tablewrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Hora</th><th>Glucosa</th><th>Momento</th><th>Notas</th></tr></thead><tbody>${gl.map(x=>`<tr><td>${esc(fmtDate(x.date))}</td><td>${esc(x.time||'—')}</td><td>${esc(x.value)} mg/dL</td><td>${esc(x.when||'—')}</td><td>${esc(x.notes||'—')}</td></tr>`).join('')}</tbody></table></div>`:'<p>No hay registros de glucosa.</p>';
+ const glucoseSection=section('5. Glucosa · historial completo',`<p><strong>Promedio de los registros:</strong> ${gl.length?Math.round(average(gl.map(x=>Number(x.value))))+' mg/dL':'—'} · <strong>Total:</strong> ${gl.length}</p>${glRows}`);
+ const visitRows=visits.length?`<div class="tablewrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Próxima cita</th><th>Profesional</th><th>Especialidad</th><th>Motivo / notas</th><th>Archivo</th></tr></thead><tbody>${visits.map(v=>`<tr><td>${esc(v.date?fmtDate(v.date):'—')}</td><td>${esc(v.nextDate?fmtDate(v.nextDate):'—')}</td><td>${esc(v.doctor||'—')}</td><td>${esc(v.specialty||'—')}</td><td>${esc(v.notes||'—')}</td><td>${esc(v.fileName||'—')}</td></tr>`).join('')}</tbody></table></div>`:'<p>No hay consultas registradas.</p>';
+ const visitSection=section('6. Consultas y próximas citas',`<p><strong>Citas futuras registradas:</strong> ${upcoming.length}</p>${visitRows}`);
+ const waterSection=section('7. Hidratación',`<p><strong>Meta diaria configurada:</strong> ${Number(water.goal)||2000} ml</p><p><strong>Consumo anotado hoy (${fmtDate(today())}):</strong> ${todayWater} ml</p><p><strong>Registros totales de agua:</strong> ${waterLogs.length}</p>`);
+ const generated=new Date().toLocaleString('es-SV');
+ document.getElementById('reportOutput').innerHTML=`<div class="card report-block"><h2>Reporte clínico personal</h2><p><strong>Generado:</strong> ${esc(generated)}</p><p>Documento compilado a partir de la información guardada en este dispositivo. Los campos no completados se muestran como “No registrado”.</p></div>${patient}${safety}${medSection}${bpSection}${glucoseSection}${visitSection}${waterSection}<div class="notice">Este documento organiza datos introducidos por el usuario; no es una valoración médica ni sustituye el expediente oficial o el criterio de un profesional sanitario. Verifica los datos antes de compartirlo.</div>`;
+ window.currentHealthReport={period:'clinical',label:'Reporte clínico personal',range:{start:'todos',end:today()},bps:validBP,gls:gl,avgSys:avgBP,avgDia,avgPam,avgG:gl.length?average(gl.map(x=>Number(x.value))):null};
+}
+
 document.getElementById('generateReportBtn').addEventListener('click',reportHtml);
+document.getElementById('clinicalReportBtn').addEventListener('click',()=>{clinicalReportHtml();showView('reportes')});
 document.getElementById('reportPeriod').addEventListener('change',reportHtml);
 document.getElementById('reportDate').addEventListener('change',reportHtml);
 document.getElementById('exportReportBtn').addEventListener('click',exportReportCSV);
-document.getElementById('printReportBtn').addEventListener('click',()=>{reportHtml();window.print()});
+document.getElementById('printReportBtn').addEventListener('click',()=>{if(!window.currentHealthReport||window.currentHealthReport.period!=='clinical')reportHtml();window.print()});
 
 
 function renderPatient(){const f=document.getElementById('patientForm');if(!f)return;const p=data.patient||{};Object.keys(p).forEach(k=>{if(f.elements[k]&&document.activeElement!==f.elements[k])f.elements[k].value=p[k]||''})}

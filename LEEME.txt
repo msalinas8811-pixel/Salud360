@@ -20,3 +20,6 @@ VERSION 15 - CORRECCIONES
 - Traducción aplicada también después de actualizar listas y datos de la pantalla.
 - Caché PWA actualizada para solicitar los archivos de la versión 15.
 - Los recordatorios web requieren que el navegador/app esté activo; no sustituyen alarmas del sistema.
+
+
+VERSIÓN 16: se añadió PAM promedio en el resumen principal y en reportes; cálculo de promedios con validación de mediciones; botón de reporte clínico completo con perfil, antecedentes, alergias, medicamentos, presión arterial, PAM, glucosa, consultas/citas e hidratación. El reporte se genera dentro de Reportes y se puede imprimir/guardar como PDF.
