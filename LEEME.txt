@@ -1,8 +1,15 @@
-SaludPlus v13 - actualización basada en SaludPlus_Actualizado_Iconos_Corregidos.
-Incluye perfil del paciente, control de agua, recordatorios en página abierta y selector ES/EN.
+SaludPlus PWA — versión 14
 
-PUBLICACIÓN: sube los archivos individuales que están dentro de este ZIP a la raíz del repositorio (mantén las carpetas si las hubiera) y confirma los cambios. No subas el ZIP como un solo archivo.
+Incluye: perfil del paciente (contacto de emergencia, teléfono, alergias, padecimientos, medicamentos y notas), registro diario de agua, meta de agua, recordatorios en pantalla/notificaciones cuando el navegador lo permite, horarios de medicamentos, próximas citas, selector español/inglés, presión, glucosa, reportes y respaldo/restauración.
 
-DATOS: los datos se guardan en localStorage de este navegador/dispositivo. Antes de sustituir archivos, exporta un backup desde la aplicación. No se sincronizan entre plataformas/dispositivos.
+INSTALACIÓN / ACTUALIZACIÓN
+1. Antes de reemplazar archivos, abre la aplicación actual y exporta un backup.
+2. Descomprime este ZIP.
+3. Sube los archivos individuales a la raíz del repositorio del sitio; conserva los nombres y carpetas. No subas el ZIP como único archivo.
+4. Publica los cambios y vuelve a abrir el sitio. Si ves la versión antigua, cierra la pestaña, vuelve a abrirla y recarga.
+5. Verifica el perfil, el registro de agua, una cita futura, el idioma y el backup antes de usarlo con datos importantes.
 
-ALARMAS: las alarmas web no son fiables si la página está cerrada o suspendida. Mantén la página abierta y autoriza notificaciones; para avisos críticos usa también la app Reloj/Recordatorios del teléfono.
+PRIVACIDAD Y LÍMITES
+Los registros se guardan en localStorage de este navegador/dispositivo; no se sincronizan automáticamente. Exporta y conserva el backup en un lugar seguro. No uses información real de otra persona sin su permiso.
+
+Las alarmas web solo se revisan mientras la página está visible/activa. iOS puede suspender páginas y no garantiza alarmas cuando la app está cerrada; no sustituye Reloj/Recordatorios ni un sistema clínico. El control de agua es orientativo: sigue las indicaciones sanitarias personales, especialmente si hay restricción de líquidos. La app no diagnostica ni sustituye al profesional sanitario.
