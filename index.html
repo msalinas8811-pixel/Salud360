@@ -7,11 +7,12 @@
 <meta name="description" content="SaludPlus: seguimiento personal de presión arterial, glucosa, medicamentos y consultas.">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="saludplus-logo.svg" type="image/svg+xml">
-<title>SaludPlus v16</title>
+<title>SaludPlus v17</title>
 <style>
 :root{--teal:#0879c9;--teal2:#16b8c1;--ink:#102b46;--muted:#5c7185;--bg:#f3f8fc;--card:#fff;--line:#dce8f1;--red:#b42318;--amber:#a15c00}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:1050px;margin:auto;min-height:100vh}.top{background:linear-gradient(120deg,#07345b,#0879c9,#16b8c1);color:white;padding:22px 18px 18px;border-radius:0 0 24px 24px}.topline{display:flex;align-items:center;justify-content:space-between;gap:12px}.brandlockup{display:flex;align-items:center;gap:12px}.brandlogo{width:54px;height:54px;object-fit:contain;background:#fff;border-radius:15px;padding:4px}.brand{font-weight:800;font-size:29px;letter-spacing:-.7px;color:#fff}.brand span{color:#65d9f1}.sub{opacity:.92;font-size:13px;margin-top:4px}.pill{border:1px solid #ffffff66;border-radius:99px;padding:7px 10px;font-size:12px;white-space:nowrap}.nav{display:flex;gap:7px;overflow:auto;padding:12px 12px 4px;position:sticky;top:0;background:var(--bg);z-index:3}.nav button{border:1px solid var(--line);background:white;color:var(--muted);border-radius:12px;padding:10px 12px;white-space:nowrap;font-size:13px}.nav button.active{background:var(--teal);color:white;border-color:var(--teal)}main{padding:14px 14px 40px}.view{display:none}.view.active{display:block}.section-head{display:flex;align-items:start;justify-content:space-between;gap:12px;margin:4px 0 14px}.section-head h2{margin:0;font-size:22px}.muted{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:15px;box-shadow:0 2px 8px #183b4308;min-width:0}.metric{font-size:27px;font-weight:800;letter-spacing:-.8px;margin:7px 0}.metric small{font-size:13px;font-weight:600;letter-spacing:0}.card h3{margin:0 0 10px;font-size:15px}.row{display:flex;align-items:center;gap:10px}.row.between{justify-content:space-between}.iconbox{width:39px;height:39px;border-radius:13px;display:grid;place-items:center;background:#dff7f3;font-size:20px;flex-shrink:0}.btn{border:0;border-radius:12px;background:var(--teal);color:white;padding:11px 14px;font-weight:700}.btn.secondary{background:#e4f4f2;color:#0f625c}.btn.ghost{background:white;color:var(--teal);border:1px solid var(--line)}.btn.danger{background:#fff0ee;color:var(--red)}.btn.small{padding:7px 10px;font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#48616a}.field input,.field select,.field textarea{width:100%;padding:11px;border:1px solid #cbdcde;border-radius:10px;background:white;color:var(--ink);min-width:0}.field textarea{min-height:78px;resize:vertical}.formcard{margin-bottom:14px}.formcard h3{margin-bottom:14px}.form-actions{display:flex;gap:8px;margin-top:13px;flex-wrap:wrap}.list{display:grid;gap:9px}.item{background:white;border:1px solid var(--line);border-radius:13px;padding:12px;display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.item strong{display:block;font-size:14px}.item p{margin:4px 0 0;color:var(--muted);font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere}.tag{display:inline-block;font-size:11px;border-radius:99px;padding:4px 8px;background:#e4f4f2;color:#0f625c;margin-top:5px}.empty{border:1px dashed #bfd2d4;border-radius:14px;padding:20px;text-align:center;color:var(--muted);font-size:13px}.notice{padding:12px 13px;background:#fff8e8;border:1px solid #f2dfb5;border-radius:12px;color:#79520b;font-size:12px;line-height:1.5;margin:12px 0}.goodnote{padding:12px;background:#e8f7f2;border-radius:12px;color:#155e54;font-size:12px;line-height:1.5}.bp-status{display:inline-block;padding:6px 10px;border-radius:9px;font-size:12px;font-weight:800;margin:2px 0 8px}.bp-green{background:#dcfce7;color:#166534;border:1px solid #86efac}.bp-yellow{background:#fef9c3;color:#854d0e;border:1px solid #fde047}.bp-orange{background:#ffedd5;color:#9a3412;border:1px solid #fdba74}.bp-red{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}.bp-card-green{border-color:#22c55e;background:#f0fdf4}.bp-card-yellow{border-color:#eab308;background:#fefce8}.bp-card-orange{border-color:#f97316;background:#fff7ed}.bp-card-red{border-color:#ef4444;background:#fef2f2}.hidden{display:none!important}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:12px}td,th{text-align:left;padding:9px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--muted)}.smallmuted{font-size:11px;color:var(--muted)}.report-block{margin-bottom:14px}.report-table{width:100%;min-width:540px}.report-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.report-kpi{border:1px solid var(--line);border-radius:12px;padding:12px;background:#fbfefe}.report-kpi strong{display:block;font-size:21px;margin-top:5px}@media print{.top,.nav,.form-actions,.footer,.notice{display:none!important}body{background:white}.view{display:none!important}#reportes.view.active{display:block!important}main{padding:0}.card{box-shadow:none;break-inside:avoid}}.footer{text-align:center;padding:0 18px 26px;color:var(--muted);font-size:11px}
-@media(min-width:760px){.top{margin-top:16px;border-radius:24px;padding:26px}.nav{border-radius:15px;margin-top:10px}.grid{grid-template-columns:repeat(4,minmax(0,1fr))}main{padding:18px 0 40px}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}}
+ .range-summary{border:2px solid var(--teal);background:#eef9ff}.range-summary h3{margin-top:0}.range-summary .report-kpis{margin-top:12px}
+ @media(min-width:760px){.top{margin-top:16px;border-radius:24px;padding:26px}.nav{border-radius:15px;margin-top:10px}.grid{grid-template-columns:repeat(4,minmax(0,1fr))}main{padding:18px 0 40px}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}}
 @media(max-width:420px){.grid{grid-template-columns:1fr 1fr}.metric{font-size:23px}.formgrid{grid-template-columns:1fr 1fr}.brand{font-size:23px}.brandlogo{width:45px;height:45px}.card{padding:12px}.top{padding:18px 15px}}
 </style>
 </head>
@@ -90,12 +91,18 @@
 <section id="reportes" class="view">
  <div class="section-head"><div><h2>Reportes de salud</h2><div class="muted">Resumen semanal o mensual de presión arterial y glucosa.</div></div></div>
  <div class="card formcard">
+  <h3>Promedios por periodo de fechas</h3>
   <div class="formgrid">
-   <div class="field"><label>Tipo de reporte</label><select id="reportPeriod"><option value="week">Semanal (últimos 7 días)</option><option value="month">Mensual (mes calendario actual)</option></select></div>
+   <div class="field"><label>Fecha inicial</label><input id="averageStartDate" type="date"></div>
+   <div class="field"><label>Fecha final</label><input id="averageEndDate" type="date"></div>
+  </div>
+  <div class="form-actions"><button class="btn" id="calculateDateAveragesBtn" type="button">Calcular promedios de este periodo</button></div>
+  <div class="formgrid" style="margin-top:12px">
+   <div class="field"><label>Reporte rápido</label><select id="reportPeriod"><option value="week">Últimos 7 días</option><option value="month">Mes calendario</option></select></div>
    <div class="field"><label>Fecha de referencia</label><input id="reportDate" type="date"></div>
   </div>
-  <div class="form-actions"><button class="btn" id="generateReportBtn">Actualizar reporte</button><button class="btn secondary" id="clinicalReportBtn" type="button">Reporte clínico completo</button><button class="btn secondary" id="exportReportBtn">Exportar CSV</button><button class="btn ghost" id="printReportBtn">Imprimir / Guardar PDF</button></div>
-  <p class="smallmuted">El reporte incluye únicamente registros guardados en este dispositivo dentro del periodo elegido.</p>
+  <div class="form-actions"><button class="btn secondary" id="generateReportBtn">Actualizar reporte rápido</button><button class="btn secondary" id="clinicalReportBtn" type="button">Generar reporte clínico completo</button><button class="btn secondary" id="exportReportBtn">Exportar CSV</button><button class="btn ghost" id="printReportBtn">Imprimir / Guardar PDF</button></div>
+  <p class="smallmuted">El cálculo por fechas incluye mediciones guardadas entre ambas fechas, inclusive. La PAM se estima por medición con (sistólica + 2 × diastólica) / 3. Los resultados son descriptivos, no diagnósticos.</p>
  </div>
  <div id="reportOutput">
   <div class="card"><h3>Selecciona el periodo</h3><p class="muted">Aquí aparecerán los promedios, cantidad de registros y detalle de las mediciones.</p></div>
@@ -196,33 +203,50 @@ function reportRange(period,ref){
  return {start:isoDateLocal(start),end:isoDateLocal(end)};
 }
 function withinRange(x,r){return x.date>=r.start&&x.date<=r.end}
-function reportHtml(){
- const period=document.getElementById('reportPeriod').value,ref=document.getElementById('reportDate').value||today(),r=reportRange(period,ref);
+function calculateHealthReport(startDate,endDate,label){
+ if(!startDate||!endDate){alert('Selecciona una fecha inicial y una fecha final.');return false}
+ if(startDate>endDate){alert('La fecha inicial no puede ser posterior a la fecha final.');return false}
+ const r={start:startDate,end:endDate};
  const bps=data.bp.filter(x=>withinRange(x,r)).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
  const gls=data.glucose.filter(x=>withinRange(x,r)).sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
  const validBps=bps.filter(x=>[x.ls,x.ld,x.rs,x.rd].every(v=>v!==''&&v!==null&&v!==undefined&&Number.isFinite(Number(v))&&Number(v)>0));
- const allSys=validBps.flatMap(x=>[Number(x.ls),Number(x.rs)]),allDia=validBps.flatMap(x=>[Number(x.ld),Number(x.rd)]);
- const avgSys=average(allSys),avgDia=average(allDia),avgG=average(gls.map(x=>Number(x.value)).filter(Number.isFinite));
- const avgPam=average(validBps.flatMap(x=>[(Number(x.ls)+2*Number(x.ld))/3,(Number(x.rs)+2*Number(x.rd))/3]));
- const label=period==='week'?'Reporte semanal':'Reporte mensual';
- let out=`<div class="card report-block"><h3>${label}: ${fmtDate(r.start)} al ${fmtDate(r.end)}</h3><div class="report-kpis">
- <div class="report-kpi"><span class="muted">Mediciones de presión</span><strong>${bps.length}</strong></div>
- <div class="report-kpi"><span class="muted">Registros de glucosa</span><strong>${gls.length}</strong></div>
- <div class="report-kpi"><span class="muted">Promedio presión* </span><strong>${avgSys==null?'—':Math.round(avgSys)+'/'+Math.round(avgDia)+' mmHg'}</strong></div>
- <div class="report-kpi"><span class="muted">PAM promedio aproximada</span><strong>${avgPam==null?'—':avgPam.toFixed(1)+' mmHg'}</strong></div>
- <div class="report-kpi"><span class="muted">Promedio glucosa</span><strong>${avgG==null?'—':Math.round(avgG)+' mg/dL'}</strong></div>
- </div><p class="smallmuted">*Promedio descriptivo de las cifras de ambos brazos registradas durante el periodo. No es una clasificación ni diagnóstico.</p></div>`;
+ const allSys=validBps.flatMap(x=>[Number(x.ls),Number(x.rs)]);
+ const allDia=validBps.flatMap(x=>[Number(x.ld),Number(x.rd)]);
+ const avgSys=average(allSys),avgDia=average(allDia);
+ const pams=validBps.flatMap(x=>[(Number(x.ls)+2*Number(x.ld))/3,(Number(x.rs)+2*Number(x.rd))/3]);
+ const avgPam=average(pams);
+ const validGlucose=gls.map(x=>Number(x.value)).filter(v=>Number.isFinite(v)&&v>0);
+ const avgG=average(validGlucose);
+ const avgSysL=average(validBps.map(x=>Number(x.ls))),avgDiaL=average(validBps.map(x=>Number(x.ld)));
+ const avgSysR=average(validBps.map(x=>Number(x.rs))),avgDiaR=average(validBps.map(x=>Number(x.rd)));
+ let out=`<div class="card report-block range-summary"><h3>${esc(label)}: ${fmtDate(r.start)} al ${fmtDate(r.end)}</h3><div class="report-kpis">
+ <div class="report-kpi"><span class="muted">Tomas válidas de presión</span><strong>${validBps.length}</strong></div>
+ <div class="report-kpi"><span class="muted">Promedio general sistólica/diastólica</span><strong>${avgSys==null?'—':Math.round(avgSys)+'/'+Math.round(avgDia)+' mmHg'}</strong></div>
+ <div class="report-kpi"><span class="muted">PAM promedio estimada</span><strong>${avgPam==null?'—':avgPam.toFixed(1)+' mmHg'}</strong></div>
+ <div class="report-kpi"><span class="muted">Promedio brazo izquierdo</span><strong>${avgSysL==null?'—':Math.round(avgSysL)+'/'+Math.round(avgDiaL)+' mmHg'}</strong></div>
+ <div class="report-kpi"><span class="muted">Promedio brazo derecho</span><strong>${avgSysR==null?'—':Math.round(avgSysR)+'/'+Math.round(avgDiaR)+' mmHg'}</strong></div>
+ <div class="report-kpi"><span class="muted">Promedio de glucosa</span><strong>${avgG==null?'—':Math.round(avgG)+' mg/dL'}</strong></div>
+ <div class="report-kpi"><span class="muted">Registros de glucosa</span><strong>${validGlucose.length}</strong></div>
+ </div><p class="smallmuted">Se promedian los valores de ambos brazos por separado y en conjunto. PAM = (sistólica + 2 × diastólica) / 3; se calcula por brazo y luego se promedian las PAM válidas. No es un diagnóstico.</p></div>`;
  out+=`<div class="card report-block"><h3>Detalle de presión arterial</h3>`;
- out+=bps.length?`<div class="tablewrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Hora</th><th>Izquierdo</th><th>Derecho</th><th>Pulso izq./der.</th><th>Notas</th></tr></thead><tbody>${bps.map(x=>`<tr><td>${fmtDate(x.date)}</td><td>${esc(x.time)}</td><td>${x.ls}/${x.ld}</td><td>${x.rs}/${x.rd}</td><td>${x.lp||'—'} / ${x.rp||'—'}</td><td>${esc(x.notes||'')}</td></tr>`).join('')}</tbody></table></div>`:empty('No hay mediciones de presión en este periodo.');
- out+='</div>';
- out+=`<div class="card report-block"><h3>Detalle de glucosa</h3>`;
- out+=gls.length?`<div class="tablewrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Hora</th><th>Resultado</th><th>Momento</th><th>Notas</th></tr></thead><tbody>${gls.map(x=>`<tr><td>${fmtDate(x.date)}</td><td>${esc(x.time)}</td><td>${x.value} mg/dL</td><td>${esc(x.when)}</td><td>${esc(x.notes||'')}</td></tr>`).join('')}</tbody></table></div>`:empty('No hay registros de glucosa en este periodo.');
+ out+=validBps.length?`<div class="tablewrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Hora</th><th>Izquierdo</th><th>Derecho</th><th>PAM izq./der.</th><th>Pulso izq./der.</th><th>Notas</th></tr></thead><tbody>${validBps.map(x=>`<tr><td>${fmtDate(x.date)}</td><td>${esc(x.time||'—')}</td><td>${Number(x.ls)}/${Number(x.ld)}</td><td>${Number(x.rs)}/${Number(x.rd)}</td><td>${((Number(x.ls)+2*Number(x.ld))/3).toFixed(1)} / ${((Number(x.rs)+2*Number(x.rd))/3).toFixed(1)}</td><td>${x.lp||'—'} / ${x.rp||'—'}</td><td>${esc(x.notes||'')}</td></tr>`).join('')}</tbody></table></div>`:empty('No hay mediciones completas de presión en el periodo seleccionado.');
+ out+='</div><div class="card report-block"><h3>Detalle de glucosa</h3>';
+ out+=validGlucose.length?`<div class="tablewrap"><table class="report-table"><thead><tr><th>Fecha</th><th>Hora</th><th>Resultado</th><th>Momento</th><th>Notas</th></tr></thead><tbody>${gls.filter(x=>Number.isFinite(Number(x.value))&&Number(x.value)>0).map(x=>`<tr><td>${fmtDate(x.date)}</td><td>${esc(x.time||'—')}</td><td>${Number(x.value)} mg/dL</td><td>${esc(x.when||'—')}</td><td>${esc(x.notes||'')}</td></tr>`).join('')}</tbody></table></div>`:empty('No hay registros de glucosa válidos en el periodo.');
  out+='</div>';
  document.getElementById('reportOutput').innerHTML=out;
- window.currentHealthReport={period,label,range:r,bps,gls,avgSys,avgDia,avgPam,avgG};
+ window.currentHealthReport={period:'custom',label,range:r,bps:validBps,gls:gls.filter(x=>Number.isFinite(Number(x.value))&&Number(x.value)>0),avgSys,avgDia,avgPam,avgG};
+ return true;
+}
+function reportHtml(){
+ const period=document.getElementById('reportPeriod').value,ref=document.getElementById('reportDate').value||today(),r=reportRange(period,ref);
+ return calculateHealthReport(r.start,r.end,period==='week'?'Reporte de últimos 7 días':'Reporte del mes calendario');
+}
+function calculateDateAverages(){
+ return calculateHealthReport(document.getElementById('averageStartDate').value,document.getElementById('averageEndDate').value,'Promedios por periodo seleccionado');
 }
 function exportReportCSV(){
- const r=window.currentHealthReport;if(!r){reportHtml()}const q=window.currentHealthReport;
+ if(!window.currentHealthReport){if(!reportHtml())return}
+ const q=window.currentHealthReport;if(!q)return;
  const rows=[['Salud 360',q.label,`${q.range.start} a ${q.range.end}`],[],['PRESIÓN ARTERIAL','Fecha','Hora','Sistólica izquierda','Diastólica izquierda','Pulso izquierdo','Sistólica derecha','Diastólica derecha','Pulso derecho','Notas']];
  q.bps.forEach(x=>rows.push(['Presión',x.date,x.time,x.ls,x.ld,x.lp||'',x.rs,x.rd,x.rp||'',x.notes||'']));
  rows.push([],['GLUCOSA','Fecha','Hora','mg/dL','Momento','Notas']);
@@ -267,11 +291,19 @@ function clinicalReportHtml(){
 }
 
 document.getElementById('generateReportBtn').addEventListener('click',reportHtml);
-document.getElementById('clinicalReportBtn').addEventListener('click',()=>{clinicalReportHtml();showView('reportes')});
+document.getElementById('clinicalReportBtn').addEventListener('click',()=>{showView('reportes');clinicalReportHtml();document.getElementById('reportOutput').scrollIntoView({behavior:'smooth',block:'start'});});
+document.getElementById('calculateDateAveragesBtn').addEventListener('click',calculateDateAverages);
 document.getElementById('reportPeriod').addEventListener('change',reportHtml);
 document.getElementById('reportDate').addEventListener('change',reportHtml);
+function initializeReportDates(){
+ const end=document.getElementById('averageEndDate'),start=document.getElementById('averageStartDate'),ref=document.getElementById('reportDate');
+ if(end&&!end.value)end.value=today();
+ if(start&&!start.value){const d=new Date();d.setDate(d.getDate()-6);start.value=isoDateLocal(d)}
+ if(ref&&!ref.value)ref.value=today();
+}
+initializeReportDates();
 document.getElementById('exportReportBtn').addEventListener('click',exportReportCSV);
-document.getElementById('printReportBtn').addEventListener('click',()=>{if(!window.currentHealthReport||window.currentHealthReport.period!=='clinical')reportHtml();window.print()});
+document.getElementById('printReportBtn').addEventListener('click',()=>{if(!window.currentHealthReport){if(!reportHtml())return}window.print()});
 
 
 function renderPatient(){const f=document.getElementById('patientForm');if(!f)return;const p=data.patient||{};Object.keys(p).forEach(k=>{if(f.elements[k]&&document.activeElement!==f.elements[k])f.elements[k].value=p[k]||''})}

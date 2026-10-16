@@ -23,3 +23,11 @@ VERSION 15 - CORRECCIONES
 
 
 VERSIÓN 16: se añadió PAM promedio en el resumen principal y en reportes; cálculo de promedios con validación de mediciones; botón de reporte clínico completo con perfil, antecedentes, alergias, medicamentos, presión arterial, PAM, glucosa, consultas/citas e hidratación. El reporte se genera dentro de Reportes y se puede imprimir/guardar como PDF.
+
+
+VERSION 17 - CORRECCIONES DE REPORTES
+- Se añadió un botón independiente para calcular promedios con fecha inicial y final.
+- El cálculo muestra promedio general, promedio por brazo, PAM promedio estimada y promedio de glucosa dentro del intervalo seleccionado.
+- Se añadió detalle de las mediciones incluidas y se reforzó la acción de generar el reporte clínico completo.
+- Se actualizó la caché del service worker a v17.
+- Recuerda exportar un respaldo antes de sustituir los archivos publicados.
